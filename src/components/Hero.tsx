@@ -1,0 +1,87 @@
+import { ArrowRight, GithubIcon, Linkedin, Mail } from "lucide-react";
+import { Button } from "./ui/button";
+
+export function Hero() {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  return (
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 dark:from-slate-950 dark:via-blue-950/20 dark:to-cyan-950/20">
+      <div className="container mx-auto px-4 py-20">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-6 inline-block">
+            <span className="px-5 py-2.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-base md:text-lg">
+              Available for opportunities
+            </span>
+          </div>
+
+          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 text-slate-900 dark:text-slate-100">
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
+              Demian Sims
+            </span>
+          </h1>
+
+          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-slate-600 dark:text-slate-400 font-medium">
+            Full Stack Developer & Creative Problem Solver
+          </h2>
+
+          <p className="text-xl md:text-2xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            I build elegant, performant web applications with modern
+            technologies. Passionate about clean code, user experience, and
+            turning ideas into reality.
+          </p>
+
+          <div className="flex flex-wrap gap-4 justify-center mb-12">
+            <Button
+              size="lg"
+              className="gap-2 text-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+              onClick={() => scrollToSection("projects")}
+            >
+              View My Work <ArrowRight className="w-5 h-5" />
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="gap-2 text-lg border-blue-200 dark:border-blue-800 hover:bg-blue-50 dark:hover:bg-blue-900/20"
+              onClick={() =>
+                (window.location.href = "mailto:demiansims@gmail.com")
+              }
+            >
+              <Mail className="w-5 h-5" /> Get In Touch
+            </Button>
+          </div>
+
+          <div className="flex gap-6 justify-center text-slate-600 dark:text-slate-400">
+            <a
+              href="https://github.com/dsound-zz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              aria-label="GitHub"
+            >
+              <GithubIcon className="w-7 h-7" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/demiansims"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <Linkedin className="w-7 h-7" />
+            </a>
+            <a
+              href="mailto:demiansims@gmail.com"
+              className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              aria-label="Email"
+            >
+              <Mail className="w-7 h-7" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
