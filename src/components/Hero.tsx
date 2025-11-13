@@ -21,7 +21,7 @@ export function Hero() {
 
           <h1
             className="font-bold mb-6 text-slate-900 dark:text-slate-100"
-            style={{ fontSize: "clamp(3rem, 8vw, 8rem)" }}
+            style={{ fontSize: "clamp(2rem, 8vw, 6rem)" }}
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
