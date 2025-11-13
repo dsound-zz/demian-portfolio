@@ -11,31 +11,32 @@ const navItems = [
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const scrollToSection = (href: string) => {
-    const id = href.replace('#', '');
+    const id = href.replace("#", "");
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsOpen(false);
     }
   };
-  
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-blue-100 dark:border-blue-900/30">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <a 
-            href="#home" 
+          <a
+            href="#home"
             onClick={(e) => {
               e.preventDefault();
-              scrollToSection('#home');
+              scrollToSection("#home");
             }}
-            className="text-xl md:text-2xl text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+            className="text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+            style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
           >
-            {"<DemianSims />"}
+            Demian Sims
           </a>
-          
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
@@ -51,15 +52,17 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button 
+            <Button
               size="sm"
               className="text-base bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
-              onClick={() => window.location.href = 'mailto:demiansims@gmail.com'}
+              onClick={() =>
+                (window.location.href = "mailto:demiansims@gmail.com")
+              }
             >
               Contact
             </Button>
           </div>
-          
+
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -69,7 +72,7 @@ export function Navigation() {
             {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
           </button>
         </div>
-        
+
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden py-4 border-t border-blue-100 dark:border-blue-900/30">
@@ -86,10 +89,12 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
-            <Button 
-              size="sm" 
+            <Button
+              size="sm"
               className="mt-2 w-full text-base bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
-              onClick={() => window.location.href = 'mailto:demiansims@gmail.com'}
+              onClick={() =>
+                (window.location.href = "mailto:demiansims@gmail.com")
+              }
             >
               Contact
             </Button>

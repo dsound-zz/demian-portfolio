@@ -102,17 +102,23 @@ export function Projects() {
     <section id="projects" className="py-20 bg-white dark:bg-slate-950">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-4 text-slate-900 dark:text-slate-100">
+          <h2
+            className="font-bold mb-4 text-slate-900 dark:text-slate-100"
+            style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
+          >
             Featured Projects
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p
+            className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)" }}
+          >
             A selection of projects I've built or contributed to, showcasing my
             skills in full-stack development and problem-solving.
           </p>
         </div>
 
         <Tabs defaultValue="all" className="max-w-7xl mx-auto">
-          <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-12">
+          <TabsList className="flex w-fit mx-auto mb-12 gap-1">
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="web">Web Apps</TabsTrigger>
             <TabsTrigger value="other">Other</TabsTrigger>

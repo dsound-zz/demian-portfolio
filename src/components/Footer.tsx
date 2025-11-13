@@ -8,7 +8,10 @@ export function Footer() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h3 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <h3
+              className="font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
+              style={{ fontSize: "clamp(2rem, 5vw, 3.75rem)" }}
+            >
               Let's Build Something Together
             </h3>
             <p className="text-lg text-slate-300 mb-8">

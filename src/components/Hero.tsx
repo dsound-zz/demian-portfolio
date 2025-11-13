@@ -11,23 +11,35 @@ export function Hero() {
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 inline-block">
-            <span className="px-5 py-2.5 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-base md:text-lg">
+            <span
+              className="px-6 py-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
+              style={{ fontSize: "clamp(1rem, 1.5vw, 1.5rem)" }}
+            >
               Available for opportunities
             </span>
           </div>
 
-          <h1 className="text-7xl md:text-8xl lg:text-9xl font-bold mb-6 text-slate-900 dark:text-slate-100">
+          <h1
+            className="font-bold mb-6 text-slate-900 dark:text-slate-100"
+            style={{ fontSize: "clamp(3rem, 8vw, 8rem)" }}
+          >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-sky-600 bg-clip-text text-transparent">
               Demian Sims
             </span>
           </h1>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl mb-6 text-slate-600 dark:text-slate-400 font-medium">
+          <h2
+            className="mb-6 text-slate-600 dark:text-slate-400 font-medium"
+            style={{ fontSize: "clamp(1.875rem, 4vw, 3.75rem)" }}
+          >
             Full Stack Developer & Creative Problem Solver
           </h2>
 
-          <p className="text-xl md:text-2xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p
+            className="text-xl md:text-2xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)" }}
+          >
             I build elegant, performant web applications with modern
             technologies. Passionate about clean code, user experience, and
             turning ideas into reality.
