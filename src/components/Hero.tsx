@@ -8,7 +8,7 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6 inline-block">
             <span
@@ -54,12 +54,12 @@ export function Hero() {
             <Button
               size="lg"
               variant="outline"
+              asChild
               className="gap-2 text-lg border border-warm-brown text-warm-brown hover:bg-warm-cream font-body font-medium"
-              onClick={() =>
-                (window.location.href = "mailto:demiansims@gmail.com")
-              }
             >
-              <Mail className="w-5 h-5" /> Say hello
+              <a href="mailto:demiansims@gmail.com">
+                <Mail className="w-5 h-5" /> Say hello
+              </a>
             </Button>
           </div>
 
