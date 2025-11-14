@@ -14,7 +14,10 @@ export function Footer() {
             >
               Let's Talk
             </h3>
-            <p className="text-xl text-slate-300 mb-8">
+            <p 
+              className="text-3xl text-slate-300 mb-8"
+              style={{ fontSize: "20px" }}
+            >
               If you're working on something interesting or mission-driven, I'm always open to chatting.
             </p>
 
@@ -56,7 +59,7 @@ export function Footer() {
           </div>
 
           <div className="text-center text-slate-400 pt-8 border-t border-slate-800">
-            <p>
+            <p className="text-xl">
               © {currentYear} Demian Sims. Built with React & Tailwind CSS.
               Deployed on Vercel.
             </p>

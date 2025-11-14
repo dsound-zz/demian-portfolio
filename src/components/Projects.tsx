@@ -120,8 +120,8 @@ export function Projects() {
             Projects
           </h2>
           <p
-            className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
-            style={{ fontSize: "clamp(1.375rem, 2vw, 2.125rem)" }}
+            className="text-3xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
           >
             Some of the things I've built: work from Avandar Labs, climate
             tools, and a few home-grown projects I made for fun or curiosity.

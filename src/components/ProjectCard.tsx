@@ -53,7 +53,7 @@ export function ProjectCard({
         />
         {category && (
           <div className="absolute top-4 left-4">
-            <Badge className="bg-blue-600 hover:bg-blue-700 text-white border-0">
+            <Badge className="bg-blue-600 hover:bg-blue-700 text-white border-0 text-xl">
               {category}
             </Badge>
           </div>
@@ -74,14 +74,14 @@ export function ProjectCard({
         </CardTitle>
         <Tooltip delayDuration={1000}>
           <TooltipTrigger asChild>
-            <CardDescription className="text-lg line-clamp-2 cursor-help">
+            <CardDescription className="text-2xl line-clamp-2 cursor-help">
               {description}
             </CardDescription>
           </TooltipTrigger>
           <TooltipContent
             side="top"
             sideOffset={8}
-            className="max-w-sm p-3 text-base bg-slate-900 dark:bg-slate-800 text-slate-100 border-slate-700 z-50"
+            className="max-w-sm p-3 text-xl bg-slate-900 dark:bg-slate-800 text-slate-100 border-slate-700 z-50"
           >
             <p className="whitespace-normal">{description}</p>
           </TooltipContent>
@@ -95,7 +95,7 @@ export function ProjectCard({
             <Badge
               key={tag}
               variant="secondary"
-              className="bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800"
+              className="bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400 border-blue-200 dark:border-blue-800 text-xl"
             >
               {tag}
             </Badge>
@@ -109,7 +109,7 @@ export function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center gap-2 text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <Github className="w-4 h-4" />
               <span>Code</span>
@@ -120,7 +120,7 @@ export function ProjectCard({
               href={demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center gap-2 text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Live Demo</span>
@@ -131,7 +131,7 @@ export function ProjectCard({
               href={blogUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center gap-2 text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <BookOpen className="w-4 h-4" />
               <span>Blog</span>

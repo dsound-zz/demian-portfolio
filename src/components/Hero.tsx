@@ -37,8 +37,8 @@ Available for interesting work
           </h2>
 
           <p
-            className="text-xl md:text-2xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
-            style={{ fontSize: "clamp(1.375rem, 2vw, 2.125rem)" }}
+            className="text-3xl md:text-4xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
           >
             I've spent the last few years working on climate tools, data dashboards, and a mix of side projects. I care about clarity, ownership, and good product taste.
           </p>

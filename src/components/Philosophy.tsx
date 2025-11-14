@@ -42,7 +42,10 @@ export function Philosophy() {
           >
             How I Work
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p
+            className="text-3xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "20px" }}
+          >
             A few things that matter to me when building software.
           </p>
         </div>
@@ -65,7 +68,7 @@ export function Philosophy() {
                   {item.title}
                 </h3>
 
-                <p className="text-lg text-slate-600 dark:text-slate-400">
+                <p className="text-2xl text-slate-600 dark:text-slate-400">
                   {item.description}
                 </p>
               </div>

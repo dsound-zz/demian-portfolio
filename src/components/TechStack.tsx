@@ -81,7 +81,10 @@ export function TechStack() {
           >
             What I Use
           </h2>
-          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p 
+            className="text-3xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "20px" }}
+          >
             Most days I'm in TypeScript, React, and Next.js. Lately I've been deep in DuckDB-WASM and data tooling. Supabase is my go-to for backend stuff.
           </p>
         </div>
@@ -107,7 +110,7 @@ export function TechStack() {
                   {category.technologies.map((tech) => (
                     <li
                       key={tech}
-                      className="text-lg text-slate-600 dark:text-slate-400 flex items-center gap-2"
+                      className="text-2xl text-slate-600 dark:text-slate-400 flex items-center gap-2"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
                       {tech}

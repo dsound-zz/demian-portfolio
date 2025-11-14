@@ -47,14 +47,14 @@ export function Navigation() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-lg md:text-xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 {item.label}
               </a>
             ))}
             <Button
               size="sm"
-              className="text-base bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+              className="text-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
               onClick={() =>
                 (window.location.href = "mailto:demiansims@gmail.com")
               }
@@ -84,14 +84,14 @@ export function Navigation() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block py-2 text-xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="block py-2 text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
               >
                 {item.label}
               </a>
             ))}
             <Button
               size="sm"
-              className="mt-2 w-full text-base bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+              className="mt-2 w-full text-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
               onClick={() =>
                 (window.location.href = "mailto:demiansims@gmail.com")
               }
