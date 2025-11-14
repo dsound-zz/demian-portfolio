@@ -71,18 +71,18 @@ export function TechStack() {
   return (
     <section
       id="tech-stack"
-      className="py-20 bg-gradient-to-br from-sky-50 via-blue-50 to-cyan-50 dark:from-slate-900 dark:via-blue-950/10 dark:to-cyan-950/10"
+      className="py-20 bg-warm-beige"
     >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2
-            className="font-bold mb-4 text-slate-900 dark:text-slate-100"
+            className="font-heading font-semibold mb-4 text-warm-brown"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
           >
             What I Use
           </h2>
           <p 
-            className="text-3xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-normal leading-relaxed"
             style={{ fontSize: "20px" }}
           >
             Most days I'm in TypeScript, React, and Next.js. Lately I've been deep in DuckDB-WASM and data tooling. Supabase is my go-to for backend stuff.
@@ -95,13 +95,13 @@ export function TechStack() {
             return (
               <div
                 key={category.id}
-                className="p-6 bg-white dark:bg-slate-950 rounded-xl border border-blue-100 dark:border-blue-900/30 hover:border-blue-300 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 group"
+                className="p-6 bg-warm-cream rounded-xl border border-warm-beige hover:border-warm-beige shadow-warm-card transition-all duration-300 group"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-lg group-hover:scale-110 transition-transform">
-                    <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  <div className="p-2 bg-warm-sage rounded-lg group-hover:scale-110 transition-transform">
+                    <Icon className="w-5 h-5 text-warm-brown" />
                   </div>
-                  <h3 className="text-xl text-slate-900 dark:text-slate-100">
+                  <h3 className="text-xl text-warm-brown font-heading font-semibold">
                     {category.title}
                   </h3>
                 </div>
@@ -110,9 +110,9 @@ export function TechStack() {
                   {category.technologies.map((tech) => (
                     <li
                       key={tech}
-                      className="text-2xl text-slate-600 dark:text-slate-400 flex items-center gap-2"
+                      className="text-2xl text-warm-taupe flex items-center gap-2 font-body font-normal tracking-tight leading-relaxed"
                     >
-                      <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+                      <span className="w-1.5 h-1.5 rounded-full bg-warm-terra"></span>
                       {tech}
                     </li>
                   ))}

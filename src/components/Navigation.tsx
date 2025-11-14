@@ -22,7 +22,7 @@ export function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-slate-950/90 backdrop-blur-md border-b border-blue-100 dark:border-blue-900/30">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-warm-sand backdrop-blur-md border-b border-warm-beige">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <a
@@ -31,7 +31,7 @@ export function Navigation() {
               e.preventDefault();
               scrollToSection("#home");
             }}
-            className="text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium"
+            className="text-warm-brown hover:text-warm-terra transition-colors font-heading font-semibold"
             style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
           >
             Demian Sims
@@ -47,14 +47,14 @@ export function Navigation() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="text-xl md:text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="text-xl md:text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body font-medium tracking-tight leading-relaxed"
               >
                 {item.label}
               </a>
             ))}
             <Button
               size="sm"
-              className="text-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+              className="text-lg bg-warm-terra text-warm-brown hover:opacity-90 font-body font-medium"
               onClick={() =>
                 (window.location.href = "mailto:demiansims@gmail.com")
               }
@@ -66,7 +66,7 @@ export function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+            className="md:hidden p-2 text-warm-taupe hover:text-warm-terra transition-colors font-body"
             aria-label="Toggle menu"
           >
             {isOpen ? <X className="w-7 h-7" /> : <Menu className="w-7 h-7" />}
@@ -75,7 +75,7 @@ export function Navigation() {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-blue-100 dark:border-blue-900/30">
+          <div className="md:hidden py-4 border-t border-warm-beige">
             {navItems.map((item) => (
               <a
                 key={item.label}
@@ -84,14 +84,14 @@ export function Navigation() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className="block py-2 text-2xl text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="block py-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body font-medium leading-relaxed"
               >
                 {item.label}
               </a>
             ))}
             <Button
               size="sm"
-              className="mt-2 w-full text-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
+              className="mt-2 w-full text-xl bg-warm-terra text-warm-brown hover:opacity-90 font-body font-medium"
               onClick={() =>
                 (window.location.href = "mailto:demiansims@gmail.com")
               }

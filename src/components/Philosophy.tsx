@@ -33,17 +33,17 @@ const philosophyItems = [
 
 export function Philosophy() {
   return (
-    <section id="philosophy" className="py-20 bg-white dark:bg-slate-950">
+    <section id="philosophy" className="py-20 bg-warm-sand">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2
-            className="font-bold mb-4 text-slate-900 dark:text-slate-100"
+            className="font-heading font-semibold mb-4 text-warm-brown"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
           >
             How I Work
           </h2>
           <p
-            className="text-3xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-normal leading-relaxed"
             style={{ fontSize: "20px" }}
           >
             A few things that matter to me when building software.
@@ -56,19 +56,19 @@ export function Philosophy() {
             return (
               <div
                 key={item.id}
-                className="p-8 bg-gradient-to-br from-sky-50 to-blue-50 dark:from-blue-950/20 dark:to-cyan-950/20 rounded-xl hover:shadow-xl transition-all duration-300 border border-blue-100 dark:border-blue-900/30 group"
+                className="p-8 bg-warm-cream rounded-xl shadow-warm-card transition-all duration-300 border border-warm-beige group"
               >
                 <div className="mb-4">
-                  <div className="inline-flex p-3 bg-gradient-to-br from-blue-500 to-cyan-600 rounded-xl group-hover:scale-110 transition-transform shadow-lg">
-                    <Icon className="w-6 h-6 text-white" />
+                  <div className="inline-flex p-3 bg-warm-sage rounded-xl group-hover:scale-110 transition-transform shadow-warm-card">
+                    <Icon className="w-6 h-6 text-warm-brown" />
                   </div>
                 </div>
 
-                <h3 className="text-2xl mb-3 text-slate-900 dark:text-slate-100">
+                <h3 className="text-2xl mb-3 text-warm-brown font-heading font-semibold">
                   {item.title}
                 </h3>
 
-                <p className="text-2xl text-slate-600 dark:text-slate-400">
+                <p className="text-2xl text-warm-taupe font-body font-normal leading-relaxed">
                   {item.description}
                 </p>
               </div>

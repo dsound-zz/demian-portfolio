@@ -110,17 +110,17 @@ export function Projects() {
   );
 
   return (
-    <section id="projects" className="py-20 bg-white dark:bg-slate-950">
+    <section id="projects" className="py-20 bg-warm-cream">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2
-            className="font-bold mb-4 text-slate-900 dark:text-slate-100"
+            className="font-heading font-semibold mb-4 text-warm-brown"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
           >
             Projects
           </h2>
           <p
-            className="text-3xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-medium leading-relaxed"
             style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
           >
             Some of the things I've built: work from Avandar Labs, climate
