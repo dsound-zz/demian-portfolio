@@ -6,28 +6,28 @@ const philosophyItems = [
     icon: Target,
     title: "Ownership & Mission-Driven Work",
     description:
-      "I like owning the work and pushing on missions that matter. AI has taken a lot of the old bottlenecks out of engineering, but taste and judgment still separate good teams from forgettable ones.",
+      "I like owning the work and pushing on missions that matter. AI removes bottlenecks, but taste and judgment still separate good teams from forgettable ones.",
   },
   {
     id: 2,
     icon: Code,
     title: "Clean, Scalable Code",
     description:
-      "I care about clean, scalable code, and I like working closely with great designers and project managers so the product feels right, not just built.",
+      "Clean, scalable code matters. I work closely with designers and PMs so the product feels right, not just functional.",
   },
   {
     id: 3,
     icon: Lightbulb,
     title: "Thinking Beyond the Ticket",
     description:
-      "Developers should think beyond the ticket. What are we actually improving for people? How does this fit into a system that rarely puts users first? That's the level I try to operate on.",
+      "Think beyond the ticket. What are we actually improving for people? How does this fit into a system that rarely puts users first? That's where I try to operate.",
   },
   {
     id: 4,
     icon: Users,
     title: "Learning & Mentorship",
     description:
-      "I like to learn and mentor. User-centric design is at the core of how I approach building products.",
+      "I like to learn and mentor. User-centric design isn't a buzzword—it's how I approach building products that people actually want to use.",
   },
 ];
 
@@ -40,11 +40,10 @@ export function Philosophy() {
             className="font-bold mb-4 text-slate-900 dark:text-slate-100"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
           >
-            My Philosophy
+            How I Work
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Core principles that guide my approach to development and shape how
-            I work.
+            A few things that matter to me when building software.
           </p>
         </div>
 

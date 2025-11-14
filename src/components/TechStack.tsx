@@ -79,11 +79,10 @@ export function TechStack() {
             className="font-bold mb-4 text-slate-900 dark:text-slate-100"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
           >
-            Tech Stack
+            What I Use
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Technologies and tools I use to bring ideas to life. Always learning
-            and staying up-to-date with the latest industry trends.
+            What I actually use day-to-day. Strongest in TypeScript, React, Next.js, and Supabase. Recently working with DuckDB-WASM and data tooling.
           </p>
         </div>
 

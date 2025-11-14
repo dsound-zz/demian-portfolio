@@ -15,7 +15,7 @@ export function Hero() {
               className="px-6 py-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
               style={{ fontSize: "clamp(1rem, 1.5vw, 1.5rem)" }}
             >
-              Available for opportunities
+Open to new projects
             </span>
           </div>
 
@@ -33,16 +33,14 @@ export function Hero() {
             className="mb-6 text-slate-600 dark:text-slate-400 font-medium"
             style={{ fontSize: "clamp(1.875rem, 4vw, 3.75rem)" }}
           >
-            Full Stack Developer & Creative Problem Solver
+TypeScript Engineer
           </h2>
 
           <p
             className="text-xl md:text-2xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
             style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)" }}
           >
-            I build elegant, performant web applications with modern
-            technologies. Passionate about clean code, user experience, and
-            turning ideas into reality.
+            I'm a TypeScript-focused engineer who builds fast, clean user experiences and tackles tricky data problems. Strong in React, Next.js, and Supabase, with real experience at Rethink, Olivine, and Avandar Labs.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">

@@ -25,7 +25,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "AvandarLabs",
     description:
-      "A data platform ecosystem for the social sector, built as a collection of products that work together. Like Google Drive's ecosystem, Avandar provides data products that solve social sector problems—from data integration to geospatial exploration.",
+      "Built data tooling for the social sector at Avandar Labs. Worked with DuckDB-WASM for client-side CSV ingestion and analysis, plus geospatial exploration. The platform lets organizations work with their data without shipping everything to a server.",
     image: avandarPreview,
     tags: [
       "React/Tanstack",
@@ -42,7 +42,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Vigil",
     description:
-      "A privacy-focused Progressive Web App (PWA) that enables anonymous community members to share real-time safety alerts. The platform emphasizes privacy, anonymity, and community-driven verification through a confirmation system.",
+      "A Progressive Web App where community members can share real-time safety alerts anonymously. Built the confirmation system so alerts get verified by multiple people before going live.",
     image: vigilPreview,
     tags: ["React/Tanstack", "TypeScript", "Tailwind", "Supabase"],
     githubUrl: "https://github.com/dsound-zz/vigil",
@@ -52,7 +52,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Mood Blocks",
     description:
-      "Built a small AI-driven mood visualizer that generates color, animation, and binaural-beat experiences from a simple “How are you?” prompt. Uses LLM-driven schemas, Web Audio API, and browser-native generative effects to turn emotions into visuals and sound.",
+      "A small experiment: type 'How are you?' and get back color, animation, and binaural beats. Uses an LLM to parse mood, then Web Audio API and browser-native effects to generate visuals and sound. Mostly built to see if I could make emotions tangible.",
     image: moodBlocksPreview,
     tags: ["NextJS", "TypeScript", "OpenAI", "SSR", "LLM", "ExpressJS"],
     githubUrl: "https://github.com/dsound-zz/mood-blocks",
@@ -62,7 +62,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Music Portfolio",
     description:
-      "A showcase of thousands of tracks of music and sound design, featuring original productions and work for bands. Built to highlight creative work in audio production and composition.",
+      "A portfolio site for my music and sound design work—thousands of tracks from original productions and band work. Built this to organize years of audio work from my previous career as a composer.",
     image: musicPortfolioPreview,
     tags: ["NextJS", "TypeScript", "Sanity CMS"],
     githubUrl: "https://github.com/dsound-zz/music-portfolio",
@@ -72,7 +72,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Climate Response",
     description:
-      "Olivine's Climate Response app helped high-energy-users understand their emissions in real time and take action. It pulled data from industrial sensors and utility feeds, translated it into clear insights, and surfaced recommendations so companies could cut carbon without slowing down operations.",
+      "Worked on Climate Response at Olivine—a tool for high-energy users to see emissions in real time. Pulled data from industrial sensors and utility feeds, turned it into actionable insights. Companies could cut carbon without slowing operations.",
     image: climateResponsePreview,
     tags: [
       "ReactJS",
@@ -88,7 +88,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Faunagram",
     description:
-      "A fauna-focused take on Instagram for people to share experiences of animal sightings in urban areas. Connecting nature enthusiasts and urban wildlife observers.",
+      "An app for sharing animal sightings in urban areas. People post photos and locations when they spot wildlife in the city. Built it to connect people who pay attention to what's around them.",
     image: faunagramPreview,
     tags: ["React/Tanstack", "ExpressJS", "Tailwind", "Supabase"],
     githubUrl: "https://github.com/dsound-zz/faunagram-app-v2",
@@ -117,14 +117,14 @@ export function Projects() {
             className="font-bold mb-4 text-slate-900 dark:text-slate-100"
             style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
           >
-            Featured Projects
+            Projects
           </h2>
           <p
             className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
             style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)" }}
           >
-            A selection of projects I've built or contributed to, showcasing my
-            skills in full-stack development and problem-solving.
+            Things I've built or worked on. Mix of side projects and work from
+            Rethink, Olivine, TML, and Avandar Labs.
           </p>
         </div>
 

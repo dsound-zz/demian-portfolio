@@ -12,11 +12,10 @@ export function Footer() {
               className="font-bold mb-4 bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
               style={{ fontSize: "clamp(2rem, 5vw, 3.75rem)" }}
             >
-              Let's Build Something Together
+              Let's Talk
             </h3>
             <p className="text-lg text-slate-300 mb-8">
-              I'm always open to discussing new projects, creative ideas, or
-              opportunities to be part of your vision.
+              If you're working on something interesting or mission-driven, I'm always open to chatting.
             </p>
 
             <a
