@@ -9,6 +9,7 @@ import { Badge } from "./ui/badge";
 import { ExternalLink, GithubIcon, BookOpen } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
+import { useState, useEffect } from "react";
 
 export interface ProjectCardProps {
   title: string;
@@ -31,11 +32,43 @@ export function ProjectCard({
   blogUrl,
   category,
 }: ProjectCardProps) {
+  const [showTooltip, setShowTooltip] = useState(false);
+  const [hoverTimeout, setHoverTimeout] = useState<number | null>(null);
+
   const handleImageClick = () => {
     if (demoUrl) {
       window.open(demoUrl, "_blank", "noopener,noreferrer");
     }
   };
+
+  const handleMouseEnter = () => {
+    // Clear any existing timeout
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+    }
+    // Set new timeout to show tooltip after 1 second
+    const timeout = window.setTimeout(() => {
+      setShowTooltip(true);
+    }, 1000);
+    setHoverTimeout(timeout);
+  };
+
+  const handleMouseLeave = () => {
+    // Clear timeout if user leaves before 1 second
+    if (hoverTimeout) {
+      clearTimeout(hoverTimeout);
+      setHoverTimeout(null);
+    }
+    setShowTooltip(false);
+  };
+
+  useEffect(() => {
+    return () => {
+      if (hoverTimeout) {
+        clearTimeout(hoverTimeout);
+      }
+    };
+  }, [hoverTimeout]);
 
   return (
     <Card className="group overflow-hidden hover:shadow-xl transition-all duration-300 border-slate-200 dark:border-slate-800 hover:border-blue-200 dark:hover:border-blue-800">
@@ -72,15 +105,21 @@ export function ProjectCard({
         <CardTitle className="text-xl group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {title}
         </CardTitle>
-        <Tooltip delayDuration={1000}>
+        <Tooltip open={showTooltip}>
           <TooltipTrigger asChild>
-            <CardDescription className="text-base line-clamp-2 cursor-help">
+            <CardDescription
+              className="text-base line-clamp-2 cursor-help"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               {description}
             </CardDescription>
           </TooltipTrigger>
           <TooltipContent
             side="top"
             className="max-w-sm p-3 text-sm bg-slate-900 dark:bg-slate-800 text-slate-100 border-slate-700"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}
           >
             <p className="whitespace-normal">{description}</p>
           </TooltipContent>
