@@ -43,7 +43,7 @@ export function ProjectCard({
   const handleMouseEnter = () => {
     const timeout = setTimeout(() => {
       setShowTooltip(true);
-    }, 1000);
+    }, 700);
     setHoverTimeout(timeout);
   };
 
@@ -78,8 +78,8 @@ export function ProjectCard({
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
         {category && (
-          <div className="absolute top-4 left-4">
-            <Badge className="bg-warm-terra text-warm-brown border-0 text-2xl font-body">
+          <div className="absolute top-4 right-4">
+            <Badge className="bg-warm-terra text-warm-brown border-0 text-1l font-body">
               {category}
             </Badge>
           </div>
@@ -108,7 +108,9 @@ export function ProjectCard({
           </CardDescription>
           {showTooltip && (
             <div className="absolute bottom-full left-0 mb-3 z-50 w-full max-w-md p-4 bg-warm-cream border border-warm-beige shadow-warm-card rounded-xl animate-in fade-in-0 zoom-in-95 duration-200">
-              <p className="whitespace-normal text-lg font-body font-normal leading-relaxed text-warm-brown">{description}</p>
+              <p className="whitespace-normal text-lg font-body font-normal leading-relaxed text-warm-brown">
+                {description}
+              </p>
             </div>
           )}
         </div>
