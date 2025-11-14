@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
-import { ExternalLink, GithubIcon, BookOpen } from "lucide-react";
+import { ExternalLink, Github, BookOpen } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Tooltip, TooltipContent, TooltipTrigger } from "./ui/tooltip";
 
@@ -111,7 +111,7 @@ export function ProjectCard({
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-base text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
-              <GithubIcon className="w-4 h-4" />
+              <Github className="w-4 h-4" />
               <span>Code</span>
             </a>
           )}
