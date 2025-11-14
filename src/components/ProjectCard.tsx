@@ -69,19 +69,19 @@ export function ProjectCard({
 
       {/* Content Section */}
       <CardHeader>
-        <CardTitle className="text-xl group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        <CardTitle className="text-2xl group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {title}
         </CardTitle>
         <Tooltip delayDuration={1000}>
           <TooltipTrigger asChild>
-            <CardDescription className="text-base line-clamp-2 cursor-help">
+            <CardDescription className="text-lg line-clamp-2 cursor-help">
               {description}
             </CardDescription>
           </TooltipTrigger>
           <TooltipContent
             side="top"
             sideOffset={8}
-            className="max-w-sm p-3 text-sm bg-slate-900 dark:bg-slate-800 text-slate-100 border-slate-700 z-50"
+            className="max-w-sm p-3 text-base bg-slate-900 dark:bg-slate-800 text-slate-100 border-slate-700 z-50"
           >
             <p className="whitespace-normal">{description}</p>
           </TooltipContent>
@@ -109,7 +109,7 @@ export function ProjectCard({
               href={githubUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-base text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center gap-2 text-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <Github className="w-4 h-4" />
               <span>Code</span>
@@ -120,7 +120,7 @@ export function ProjectCard({
               href={demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-base text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center gap-2 text-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <ExternalLink className="w-4 h-4" />
               <span>Live Demo</span>
@@ -131,7 +131,7 @@ export function ProjectCard({
               href={blogUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 text-base text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="flex items-center gap-2 text-lg text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
             >
               <BookOpen className="w-4 h-4" />
               <span>Blog</span>

@@ -81,8 +81,8 @@ export function TechStack() {
           >
             What I Use
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            What I actually use day-to-day. Strongest in TypeScript, React, Next.js, and Supabase. Recently working with DuckDB-WASM and data tooling.
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            Most days I'm in TypeScript, React, and Next.js. Lately I've been deep in DuckDB-WASM and data tooling. Supabase is my go-to for backend stuff.
           </p>
         </div>
 
@@ -98,7 +98,7 @@ export function TechStack() {
                   <div className="p-2 bg-gradient-to-br from-blue-100 to-cyan-100 dark:from-blue-900/30 dark:to-cyan-900/30 rounded-lg group-hover:scale-110 transition-transform">
                     <Icon className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   </div>
-                  <h3 className="text-lg text-slate-900 dark:text-slate-100">
+                  <h3 className="text-xl text-slate-900 dark:text-slate-100">
                     {category.title}
                   </h3>
                 </div>
@@ -107,7 +107,7 @@ export function TechStack() {
                   {category.technologies.map((tech) => (
                     <li
                       key={tech}
-                      className="text-base text-slate-600 dark:text-slate-400 flex items-center gap-2"
+                      className="text-lg text-slate-600 dark:text-slate-400 flex items-center gap-2"
                     >
                       <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
                       {tech}

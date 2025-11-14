@@ -14,7 +14,7 @@ export function Footer() {
             >
               Let's Talk
             </h3>
-            <p className="text-lg text-slate-300 mb-8">
+            <p className="text-xl text-slate-300 mb-8">
               If you're working on something interesting or mission-driven, I'm always open to chatting.
             </p>
 
@@ -23,7 +23,7 @@ export function Footer() {
               className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
             >
               <Mail className="w-4 h-4" />
-              Get In Touch
+              Say hello
             </a>
           </div>
 

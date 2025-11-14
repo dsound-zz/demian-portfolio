@@ -6,28 +6,28 @@ const philosophyItems = [
     icon: Target,
     title: "Ownership & Mission-Driven Work",
     description:
-      "I like owning the work and pushing on missions that matter. AI removes bottlenecks, but taste and judgment still separate good teams from forgettable ones.",
+      "I like owning the work and pushing on missions that matter. AI helps with boilerplate, but judgment still matters. That's what separates good teams from forgettable ones.",
   },
   {
     id: 2,
     icon: Code,
     title: "Clean, Scalable Code",
     description:
-      "Clean, scalable code matters. I work closely with designers and PMs so the product feels right, not just functional.",
+      "If something's confusing, I simplify it. I work closely with designers and PMs so the product feels right, not just functional.",
   },
   {
     id: 3,
     icon: Lightbulb,
     title: "Thinking Beyond the Ticket",
     description:
-      "Think beyond the ticket. What are we actually improving for people? How does this fit into a system that rarely puts users first? That's where I try to operate.",
+      "I like when developers think about the user, not just the ticket. What are we actually improving? How does this fit into a system that rarely puts users first? That's where I try to operate.",
   },
   {
     id: 4,
     icon: Users,
     title: "Learning & Mentorship",
     description:
-      "I like to learn and mentor. User-centric design isn't a buzzword—it's how I approach building products that people actually want to use.",
+      "I like to learn and mentor. User-centric design isn't a buzzword—it's just how I approach building things people actually want to use.",
   },
 ];
 
@@ -42,7 +42,7 @@ export function Philosophy() {
           >
             How I Work
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
             A few things that matter to me when building software.
           </p>
         </div>
@@ -61,11 +61,11 @@ export function Philosophy() {
                   </div>
                 </div>
 
-                <h3 className="text-xl mb-3 text-slate-900 dark:text-slate-100">
+                <h3 className="text-2xl mb-3 text-slate-900 dark:text-slate-100">
                   {item.title}
                 </h3>
 
-                <p className="text-base text-slate-600 dark:text-slate-400">
+                <p className="text-lg text-slate-600 dark:text-slate-400">
                   {item.description}
                 </p>
               </div>

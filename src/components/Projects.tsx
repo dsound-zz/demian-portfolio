@@ -25,7 +25,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "AvandarLabs",
     description:
-      "Built data tooling for the social sector at Avandar Labs. Worked with DuckDB-WASM for client-side CSV ingestion and analysis, plus geospatial exploration. The platform lets organizations work with their data without shipping everything to a server.",
+      "At Avandar Labs I spent a lot of time wrestling with CSV files that were too big to upload. Built client-side data tooling with DuckDB-WASM so organizations could analyze their data without shipping everything to a server. Learned a lot about geospatial work along the way.",
     image: avandarPreview,
     tags: [
       "React/Tanstack",
@@ -42,7 +42,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Vigil",
     description:
-      "A Progressive Web App where community members can share real-time safety alerts anonymously. Built the confirmation system so alerts get verified by multiple people before going live.",
+      "I built this because I wanted people to be able to share safety alerts without worrying about their identity. It's a PWA where alerts get confirmed by multiple people before going live. The confirmation system was the tricky part—making sure fake alerts don't slip through.",
     image: vigilPreview,
     tags: ["React/Tanstack", "TypeScript", "Tailwind", "Supabase"],
     githubUrl: "https://github.com/dsound-zz/vigil",
@@ -52,7 +52,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Mood Blocks",
     description:
-      "A small experiment: type 'How are you?' and get back color, animation, and binaural beats. Uses an LLM to parse mood, then Web Audio API and browser-native effects to generate visuals and sound. Mostly built to see if I could make emotions tangible.",
+      "This one was a fun experiment. Type 'How are you?' and get back color, animation, and binaural beats. Uses an LLM to parse mood, then Web Audio API to generate visuals and sound. Built it to see if I could make emotions tangible—turned out pretty interesting.",
     image: moodBlocksPreview,
     tags: ["NextJS", "TypeScript", "OpenAI", "SSR", "LLM", "ExpressJS"],
     githubUrl: "https://github.com/dsound-zz/mood-blocks",
@@ -72,7 +72,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Climate Response",
     description:
-      "Worked on Climate Response at Olivine—a tool for high-energy users to see emissions in real time. Pulled data from industrial sensors and utility feeds, turned it into actionable insights. Companies could cut carbon without slowing operations.",
+      "Worked on Climate Response at Olivine. High-energy users needed to see their emissions in real time, so we pulled data from industrial sensors and utility feeds and turned it into something actionable. The hard part was making it useful without slowing anyone down.",
     image: climateResponsePreview,
     tags: [
       "ReactJS",
@@ -88,7 +88,7 @@ const projects: ProjectCardProps[] = [
   {
     title: "Faunagram",
     description:
-      "An app for sharing animal sightings in urban areas. People post photos and locations when they spot wildlife in the city. Built it to connect people who pay attention to what's around them.",
+      "I built this because I kept noticing animals in the city and wanted to see if other people did too. It's an app where people share photos and locations of wildlife sightings. Turns out a lot of people pay attention to what's around them—more than I expected.",
     image: faunagramPreview,
     tags: ["React/Tanstack", "ExpressJS", "Tailwind", "Supabase"],
     githubUrl: "https://github.com/dsound-zz/faunagram-app-v2",
@@ -120,11 +120,11 @@ export function Projects() {
             Projects
           </h2>
           <p
-            className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
-            style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)" }}
+            className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
+            style={{ fontSize: "clamp(1.375rem, 2vw, 2.125rem)" }}
           >
-            Things I've built or worked on. Mix of side projects and work from
-            Rethink, Olivine, TML, and Avandar Labs.
+            Some of the things I've built: work from Avandar Labs, climate
+            tools, and a few home-grown projects I made for fun or curiosity.
           </p>
         </div>
 

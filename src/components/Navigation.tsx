@@ -6,7 +6,7 @@ const navItems = [
   { label: "Home", href: "#home" },
   { label: "Projects", href: "#projects" },
   { label: "Tech Stack", href: "#tech-stack" },
-  { label: "Philosophy", href: "#philosophy" },
+  { label: "How I Work", href: "#philosophy" },
 ];
 
 export function Navigation() {

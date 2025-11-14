@@ -13,9 +13,9 @@ export function Hero() {
           <div className="mb-6 inline-block">
             <span
               className="px-6 py-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400"
-              style={{ fontSize: "clamp(1rem, 1.5vw, 1.5rem)" }}
+              style={{ fontSize: "clamp(1.125rem, 1.5vw, 1.625rem)" }}
             >
-Open to new projects
+Available for interesting work
             </span>
           </div>
 
@@ -33,14 +33,14 @@ Open to new projects
             className="mb-6 text-slate-600 dark:text-slate-400 font-medium"
             style={{ fontSize: "clamp(1.875rem, 4vw, 3.75rem)" }}
           >
-TypeScript Engineer
+            I build thoughtful, fast user experiences and I like working on products that actually help people.
           </h2>
 
           <p
             className="text-xl md:text-2xl mb-12 text-slate-600 dark:text-slate-400 max-w-2xl mx-auto"
-            style={{ fontSize: "clamp(1.25rem, 2vw, 2rem)" }}
+            style={{ fontSize: "clamp(1.375rem, 2vw, 2.125rem)" }}
           >
-            I'm a TypeScript-focused engineer who builds fast, clean user experiences and tackles tricky data problems. Strong in React, Next.js, and Supabase, with real experience at Rethink, Olivine, and Avandar Labs.
+            I've spent the last few years working on climate tools, data dashboards, and a mix of side projects. I care about clarity, ownership, and good product taste.
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">
@@ -49,7 +49,7 @@ TypeScript Engineer
               className="gap-2 text-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700"
               onClick={() => scrollToSection("projects")}
             >
-              View My Work <ArrowRight className="w-5 h-5" />
+              See what I've built <ArrowRight className="w-5 h-5" />
             </Button>
             <Button
               size="lg"
@@ -59,7 +59,7 @@ TypeScript Engineer
                 (window.location.href = "mailto:demiansims@gmail.com")
               }
             >
-              <Mail className="w-5 h-5" /> Get In Touch
+              <Mail className="w-5 h-5" /> Say hello
             </Button>
           </div>
 
