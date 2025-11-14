@@ -72,7 +72,7 @@ export function ProjectCard({
         <CardTitle className="text-xl group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
           {title}
         </CardTitle>
-        <Tooltip>
+        <Tooltip delayDuration={1000}>
           <TooltipTrigger asChild>
             <CardDescription className="text-base line-clamp-2 cursor-help">
               {description}
