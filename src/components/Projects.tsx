@@ -54,7 +54,7 @@ const projects: ProjectCardProps[] = [
     description:
       "Built a small AI-driven mood visualizer that generates color, animation, and binaural-beat experiences from a simple “How are you?” prompt. Uses LLM-driven schemas, Web Audio API, and browser-native generative effects to turn emotions into visuals and sound.",
     image: moodBlocksPreview,
-    tags: ["NextJS", "TypeScript", "OpenAI", "SSR", "LLM"],
+    tags: ["NextJS", "TypeScript", "OpenAI", "SSR", "LLM", "ExpressJS"],
     githubUrl: "https://github.com/dsound-zz/mood-blocks",
     demoUrl: "https://mood-blocks.vercel.app",
     category: "Web App",
