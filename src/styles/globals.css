@@ -24,3 +24,39 @@
     @apply font-body text-warm-brown;
   }
 }
+
+/* Drop all text down 2-3px except smallest sizes */
+@layer utilities {
+  /* Apply to elements with Tailwind text size classes (excluding text-xs and text-sm) */
+  .text-base,
+  .text-lg,
+  .text-xl,
+  .text-2xl,
+  .text-3xl,
+  .text-4xl,
+  .text-5xl,
+  .text-6xl,
+  [class*="text-base"]:not(.text-xs):not(.text-sm),
+  [class*="text-lg"]:not(.text-xs):not(.text-sm),
+  [class*="text-xl"]:not(.text-xs):not(.text-sm),
+  [class*="text-2xl"]:not(.text-xs):not(.text-sm),
+  [class*="text-3xl"]:not(.text-xs):not(.text-sm),
+  [class*="text-4xl"]:not(.text-xs):not(.text-sm),
+  [class*="text-5xl"]:not(.text-xs):not(.text-sm),
+  [class*="text-6xl"]:not(.text-xs):not(.text-sm) {
+    transform: translateY(2.5px);
+  }
+  
+  /* Apply to standard text elements that don't have explicit text-xs or text-sm */
+  p:not(.text-xs):not(.text-sm),
+  h1:not(.text-xs):not(.text-sm),
+  h2:not(.text-xs):not(.text-sm),
+  h3:not(.text-xs):not(.text-sm),
+  h4:not(.text-xs):not(.text-sm),
+  h5:not(.text-xs):not(.text-sm),
+  h6:not(.text-xs):not(.text-sm),
+  li:not(.text-xs):not(.text-sm),
+  span:not(.text-xs):not(.text-sm):not([class*="text-xs"]):not([class*="text-sm"]) {
+    transform: translateY(2.5px);
+  }
+}
