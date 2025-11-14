@@ -115,13 +115,13 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2
             className="font-heading font-semibold mb-4 text-warm-brown"
-            style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
+            style={{ fontSize: "clamp(2.188rem, 6vw, 3.938rem)" }}
           >
             Projects
           </h2>
           <p
             className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-medium leading-relaxed"
-            style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
+            style={{ fontSize: "clamp(1.094rem, 2vw, 1.969rem)" }}
           >
             Some of the things I've built: work from Avandar Labs, climate
             tools, and a few home-grown projects I made for fun or curiosity.

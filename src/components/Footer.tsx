@@ -10,13 +10,13 @@ export function Footer() {
           <div className="text-center mb-8">
             <h3
               className="font-heading font-semibold mb-4 text-warm-brown"
-              style={{ fontSize: "clamp(2rem, 5vw, 3.75rem)" }}
+              style={{ fontSize: "clamp(1.75rem, 5vw, 3.281rem)" }}
             >
               Let's Talk
             </h3>
             <p 
               className="text-3xl text-warm-taupe mb-8 font-body font-normal leading-relaxed"
-              style={{ fontSize: "20px" }}
+              style={{ fontSize: "17.5px" }}
             >
               If you're working on something interesting or mission-driven, I'm always open to chatting.
             </p>

@@ -38,13 +38,13 @@ export function Philosophy() {
         <div className="text-center mb-16">
           <h2
             className="font-heading font-semibold mb-4 text-warm-brown"
-            style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
+            style={{ fontSize: "clamp(2.188rem, 6vw, 3.938rem)" }}
           >
             How I Work
           </h2>
           <p
             className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-normal leading-relaxed"
-            style={{ fontSize: "20px" }}
+            style={{ fontSize: "17.5px" }}
           >
             A few things that matter to me when building software.
           </p>

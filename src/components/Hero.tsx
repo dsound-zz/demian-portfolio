@@ -13,7 +13,7 @@ export function Hero() {
           <div className="mb-6 inline-block">
             <span
               className="px-6 py-3 rounded-full bg-warm-cream text-warm-brown border border-warm-beige font-body text-lg leading-relaxed"
-              style={{ fontSize: "clamp(1.125rem, 1.5vw, 1.625rem)" }}
+              style={{ fontSize: "clamp(0.984rem, 1.5vw, 1.422rem)" }}
             >
               Available for interesting work
             </span>
@@ -21,14 +21,14 @@ export function Hero() {
 
           <h1
             className="font-heading font-semibold mb-6 text-warm-brown"
-            style={{ fontSize: "clamp(1.75rem, 8vw, 5.75rem)" }}
+            style={{ fontSize: "clamp(1.531rem, 8vw, 5.031rem)" }}
           >
             Hi, I'm <span className="text-warm-terra font-heading">Demian</span>
           </h1>
 
           <h2
             className="mb-6 text-warm-taupe font-heading font-semibold leading-relaxed"
-            style={{ fontSize: "clamp(1.875rem, 4vw, 3.75rem)" }}
+            style={{ fontSize: "clamp(1.641rem, 4vw, 3.281rem)" }}
           >
             I build thoughtful, fast user experiences and I enjoy working on
             products that actually help people.
@@ -36,7 +36,7 @@ export function Hero() {
 
           <p
             className="text-3xl md:text-4xl mb-12 text-warm-taupe max-w-2xl mx-auto font-body font-medium leading-relaxed"
-            style={{ fontSize: "clamp(1.25rem, 2vw, 2.25rem)" }}
+            style={{ fontSize: "clamp(1.094rem, 2vw, 1.969rem)" }}
           >
             I've spent the last few years working on climate tools, data
             dashboards, and a mix of side projects. I care about clarity,

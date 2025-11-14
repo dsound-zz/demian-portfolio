@@ -5,7 +5,7 @@
 /* Base layer so Tailwind utilities can override it */
 @layer base {
   html {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   body {

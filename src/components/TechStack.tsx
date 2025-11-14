@@ -77,13 +77,13 @@ export function TechStack() {
         <div className="text-center mb-16">
           <h2
             className="font-heading font-semibold mb-4 text-warm-brown"
-            style={{ fontSize: "clamp(2.5rem, 6vw, 4.5rem)" }}
+            style={{ fontSize: "clamp(2.188rem, 6vw, 3.938rem)" }}
           >
             What I Use
           </h2>
           <p 
             className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-normal leading-relaxed"
-            style={{ fontSize: "20px" }}
+            style={{ fontSize: "17.5px" }}
           >
             Most days I'm in TypeScript, React, and Next.js. Lately I've been deep in DuckDB-WASM and data tooling. Supabase is my go-to for backend stuff.
           </p>
