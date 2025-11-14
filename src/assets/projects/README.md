@@ -11,6 +11,7 @@ Add screenshots with these exact filenames:
 - `music-portfolio-preview.jpg`
 - `climate-response-preview.jpg`
 - `faunagram-preview.jpg`
+- `mood-blocks.jpg`
 
 ## Recommended Specs
 

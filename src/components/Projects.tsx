@@ -19,6 +19,7 @@ import vigilPreview from "../assets/projects/vigil-preview.jpg";
 import musicPortfolioPreview from "../assets/projects/music-portfolio-preview.jpg";
 import climateResponsePreview from "../assets/projects/climate-response-preview.jpg";
 import faunagramPreview from "../assets/projects/faunagram-preview.jpg";
+import moodBlocksPreview from "../assets/projects/mood-blocks.jpg";
 
 const projects: ProjectCardProps[] = [
   {
@@ -46,6 +47,16 @@ const projects: ProjectCardProps[] = [
     tags: ["React/Tanstack", "TypeScript", "Tailwind", "Supabase"],
     githubUrl: "https://github.com/dsound-zz/vigil",
     demoUrl: "https://vigil-pi.vercel.app/",
+    category: "Web App",
+  },
+  {
+    title: "Mood Blocks",
+    description:
+      "Built a small AI-driven mood visualizer that generates color, animation, and binaural-beat experiences from a simple “How are you?” prompt. Uses LLM-driven schemas, Web Audio API, and browser-native generative effects to turn emotions into visuals and sound.",
+    image: moodBlocksPreview,
+    tags: ["NextJS", "TypeScript", "OpenAI", "SSR", "LLM"],
+    githubUrl: "https://github.com/dsound-zz/mood-blocks",
+    demoUrl: "https://mood-blocks.vercel.app",
     category: "Web App",
   },
   {
