@@ -21,7 +21,7 @@ export function Hero() {
 
           <h1
             className="font-heading font-semibold mb-6 text-warm-brown"
-            style={{ fontSize: "clamp(1.531rem, 8vw, 5.031rem)" }}
+            style={{ fontSize: "clamp(1.531rem, 8vw, 4.2rem)" }}
           >
             Hi, I'm <span className="text-warm-terra font-heading">Demian</span>
           </h1>
