@@ -23,7 +23,7 @@ export function Hero() {
             className="font-heading font-semibold mb-6 text-warm-brown"
             style={{ fontSize: "clamp(1.531rem, 8vw, 4.2rem)" }}
           >
-            Hi, I'm <span className="text-warm-terra font-heading">Demian</span>
+            Demian Sims — Software Engineer & Creative Technologist
           </h1>
 
           <h2

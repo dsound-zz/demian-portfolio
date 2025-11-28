@@ -1,0 +1,32 @@
+# llms.txt file for demiansims.com
+# See https://llmstxt.org for more information
+
+# About
+Demian Sims is a NYC-based software engineer, TypeScript/React developer, and creative technologist. He builds modern data tools, AI-powered apps, and intuitive web experiences.
+
+# Contact
+Email: demiansims@gmail.com
+GitHub: https://github.com/dsound-zz
+LinkedIn: https://www.linkedin.com/in/demiansims
+Website: https://demiansims.com
+
+# Skills
+- Frontend: React, TypeScript, Next.js, Tailwind CSS
+- Backend: Node.js, Express, NestJS, Ruby on Rails, GraphQL
+- Database: PostgreSQL, MongoDB, Redis, Prisma, Supabase
+- DevOps: Docker, AWS, Vercel, GitHub Actions, CI/CD
+- Mobile: React Native, Expo, iOS, Android
+- Design: Figma, UI/UX, Responsive Design
+- Architecture: Microservices, REST APIs, Event-Driven, Clean Code
+
+# Projects
+- AvandarLabs: Client-side data tooling with DuckDB-WASM for analyzing large CSV files without server uploads
+- Vigil: PWA for sharing safety alerts with multi-person confirmation system
+- Mood Blocks: LLM-powered mood parsing with Web Audio API for visuals and sound
+- Music Portfolio: Portfolio site for music and sound design work
+- Climate Response: Real-time emissions tracking from industrial sensors and utility feeds
+- Faunagram: App for sharing photos and locations of wildlife sightings
+
+# Philosophy
+Demian focuses on ownership, mission-driven work, clean scalable code, thinking beyond tickets, and learning/mentorship. He values clarity, ownership, and good product taste.
+
