@@ -8,11 +8,11 @@ export function Hero() {
 
   return (
     <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
-      <div className="container mx-auto px-4 pt-40 md:pt-32 pb-20">
+      <div className="container mx-auto px-4 pt-24 md:pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6 inline-block">
+          <div className="mb-8 inline-block">
             <span
-              className="px-6 py-3 rounded-full bg-warm-cream text-warm-brown border border-warm-beige font-body text-lg leading-relaxed"
+              className="px-4 py-2 rounded-full bg-warm-cream text-warm-brown border border-warm-beige font-body text-lg leading-relaxed"
               style={{ fontSize: "clamp(0.984rem, 1.5vw, 1.422rem)" }}
             >
               Available for interesting work
@@ -23,7 +23,7 @@ export function Hero() {
             className="font-heading font-semibold mb-6 text-warm-brown"
             style={{ fontSize: "clamp(1.531rem, 8vw, 4.2rem)" }}
           >
-            Demian Sims — Software Engineer & Creative Technologist
+            <span className="text-warm-terra">Demian Sims</span> — Software Engineer & Creative Technologist
           </h1>
 
           <h2
@@ -45,20 +45,21 @@ export function Hero() {
 
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <Button
-              size="lg"
-              className="gap-2 text-lg bg-warm-terra text-warm-brown hover:opacity-90 font-body font-medium"
+              size="sm"
+              className="!h-8 !px-4 !py-1.5 gap-2 text-base bg-warm-terra text-warm-brown hover:opacity-90 font-body font-medium w-full sm:w-auto sm:min-w-[200px] flex-shrink-0 !shadow-none !rounded-md !min-h-0 border border-warm-brown"
+              style={{ boxShadow: 'none' }}
               onClick={() => scrollToSection("projects")}
             >
-              See what I've built <ArrowRight className="w-5 h-5" />
+              See what I've built <ArrowRight className="w-4 h-4" />
             </Button>
             <Button
-              size="lg"
+              size="sm"
               variant="outline"
               asChild
-              className="gap-2 text-lg border border-warm-brown text-warm-brown hover:bg-warm-cream font-body font-medium"
+              className="!h-8 !px-4 !py-1.5 gap-2 text-base border border-warm-brown text-warm-brown hover:bg-warm-cream font-body font-medium w-full sm:w-auto sm:min-w-[200px] flex-shrink-0 !rounded-md !min-h-0"
             >
               <a href="mailto:demiansims@gmail.com">
-                <Mail className="w-5 h-5" /> Say hello
+                <Mail className="w-4 h-4" /> Say hello
               </a>
             </Button>
           </div>

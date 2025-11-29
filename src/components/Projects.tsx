@@ -129,7 +129,7 @@ export function Projects() {
         </div>
 
         <Tabs defaultValue="all" className="max-w-7xl mx-auto">
-          <TabsList className="flex w-fit mx-auto mb-12 gap-1">
+          <TabsList className="flex w-fit mx-auto mb-12 gap-2 sm:gap-1">
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="web">Web Apps</TabsTrigger>
             <TabsTrigger value="other">Other</TabsTrigger>
