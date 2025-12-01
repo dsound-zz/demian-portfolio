@@ -46,23 +46,44 @@ export function Hero() {
           <div className="flex flex-wrap gap-4 justify-center mb-12">
             <Button
               size="sm"
-              className="!h-8 !px-4 !py-1.5 gap-2 text-base bg-warm-terra text-warm-brown hover:opacity-90 font-body font-medium w-full sm:w-auto sm:min-w-[200px] flex-shrink-0 !shadow-none !rounded-md !min-h-0 border border-warm-brown"
-              style={{ boxShadow: 'none' }}
-              onClick={() => scrollToSection("projects")}
+              className="
+                        !h-10 sm:!h-8
+                        !min-h-0
+                        !py-0
+                        !leading-none
+                        w-[280px] sm:w-[220px]
+                        !px-6 sm:!px-4 gap-2 text-base 
+                         bg-warm-terra text-warm-brown border border-warm-brown
+                        font-body font-medium flex-shrink-0 !shadow-none !rounded-md
+                        "
+              onClick={() => scrollToSection('projects')}
             >
-              See what I've built <ArrowRight className="w-4 h-4" />
+              See what I’ve built <ArrowRight className="w-4 h-4" />
             </Button>
+
             <Button
               size="sm"
               variant="outline"
               asChild
-              className="!h-8 !px-4 !py-1.5 gap-2 text-base border border-warm-brown text-warm-brown hover:bg-warm-cream font-body font-medium w-full sm:w-auto sm:min-w-[200px] flex-shrink-0 !rounded-md !min-h-0"
+              className="!h-10 sm:!h-8
+                              !min-h-0
+    !py-0
+    !leading-none
+    w-[280px] sm:w-[220px]
+    !px-6 sm:!px-4 gap-2 text-base 
+    border border-warm-brown text-warm-brown hover:bg-warm-cream
+  font-body font-medium flex-shrink-0 !rounded-md"
+
+
             >
-              <a href="mailto:demiansims@gmail.com">
+              <a className="flex items-center justify-center gap-2" href="mailto:demiansims@gmail.com">
                 <Mail className="w-4 h-4" /> Say hello
               </a>
             </Button>
+
           </div>
+
+
 
           <div className="flex gap-6 justify-center text-warm-taupe font-body text-xl leading-relaxed">
             <a
@@ -93,6 +114,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
