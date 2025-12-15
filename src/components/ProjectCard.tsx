@@ -64,7 +64,7 @@ export function ProjectCard({
   }, [hoverTimeout]);
 
   return (
-    <Card className="group h-full overflow-hidden transition-all duration-300 border border-warm-beige bg-warm-cream shadow-warm-card hover:border-warm-beige">
+    <Card className="group overflow-hidden transition-all duration-300 border border-warm-beige bg-warm-cream shadow-warm-card hover:border-warm-beige">
       {/* Image Section - Clickable */}
       <div
         className={`relative h-64 overflow-hidden bg-warm-cream ${demoUrl ? "cursor-pointer" : ""
