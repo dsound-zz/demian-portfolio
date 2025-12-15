@@ -3,6 +3,7 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
+  CardFooter,
   CardTitle,
 } from "./ui/card";
 import { Badge } from "./ui/badge";
@@ -115,7 +116,7 @@ export function ProjectCard({
         </div>
       </CardHeader>
 
-      <CardContent className="flex flex-1 flex-col">
+      <CardContent>
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
@@ -128,44 +129,44 @@ export function ProjectCard({
             </Badge>
           ))}
         </div>
-
-        {/* Links */}
-        <div className="mt-auto pt-4 flex gap-4 flex-wrap">
-          {githubUrl && (
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body leading-relaxed"
-            >
-              <Github className="w-4 h-4" />
-              <span>Code</span>
-            </a>
-          )}
-          {demoUrl && (
-            <a
-              href={demoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body leading-relaxed"
-            >
-              <ExternalLink className="w-4 h-4" />
-              <span>Live Demo</span>
-            </a>
-          )}
-          {blogUrl && (
-            <a
-              href={blogUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body leading-relaxed"
-            >
-              <BookOpen className="w-4 h-4" />
-              <span>Blog</span>
-            </a>
-          )}
-        </div>
       </CardContent>
+
+      {/* Links */}
+      <CardFooter className="mt-auto flex gap-4 flex-wrap">
+        {githubUrl && (
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body leading-relaxed"
+          >
+            <Github className="w-4 h-4" />
+            <span>Code</span>
+          </a>
+        )}
+        {demoUrl && (
+          <a
+            href={demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body leading-relaxed"
+          >
+            <ExternalLink className="w-4 h-4" />
+            <span>Live Demo</span>
+          </a>
+        )}
+        {blogUrl && (
+          <a
+            href={blogUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-2xl text-warm-taupe hover:text-warm-terra transition-colors font-body leading-relaxed"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>Blog</span>
+          </a>
+        )}
+      </CardFooter>
     </Card>
   );
 }
