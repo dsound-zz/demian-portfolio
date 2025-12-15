@@ -18,8 +18,8 @@ import avandarPreview from "../assets/projects/avandar-preview.jpg";
 import vigilPreview from "../assets/projects/vigil-preview.jpg";
 import musicPortfolioPreview from "../assets/projects/music-portfolio-preview.jpg";
 import climateResponsePreview from "../assets/projects/climate-response-preview.jpg";
-import faunagramPreview from "../assets/projects/faunagram-preview.jpg";
 import moodBlocksPreview from "../assets/projects/mood-blocks.jpg";
+import linrPreview from "../assets/projects/linr-preview.jpg";
 
 const projects: ProjectCardProps[] = [
   {
@@ -50,6 +50,32 @@ const projects: ProjectCardProps[] = [
     category: "Web App",
   },
   {
+    title: "Linr",
+    description:
+      "Linr brings liner-note thinking to modern music search. It blends MusicBrainz, Wikipedia, and OpenAI to resolve ambiguous song queries and return properly attributed credits — treating music as cultural work, not just metadata.",
+    image: linrPreview,
+    tags: ["NextJS", "TypeScript", "OpenAI", "Musicbrainz API", "Tailwind", "Wikimedia API"],
+    githubUrl: "https://github.com/dsound-zz/linr",
+    demoUrl: "https://linr-six.vercel.app/",
+    category: "Web App",
+  },
+  {
+    title: "Climate Response",
+    description:
+      "Worked on Climate Response at Olivine. High-energy users needed to see their emissions in real time, so we pulled data from industrial sensors and utility feeds and turned it into something actionable. The hard part was making it useful without slowing anyone down.",
+    image: climateResponsePreview,
+    tags: [
+      "ReactJS",
+      "React Native",
+      "ExpressJS",
+      "TypeScript",
+      "Styled Components",
+      "Postgres",
+    ],
+    demoUrl: "https://www.climateresponse.com/",
+    category: "SaaS",
+  },
+  {
     title: "Mood Blocks",
     description:
       "This one was a fun experiment. Type 'How are you?' and get back color, animation, and binaural beats. Uses an LLM to parse mood, then Web Audio API to generate visuals and sound. Built it to see if I could make emotions tangible—turned out pretty interesting.",
@@ -69,32 +95,16 @@ const projects: ProjectCardProps[] = [
     demoUrl: "https://demian-sims-music.vercel.app",
     category: "Portfolio",
   },
-  {
-    title: "Climate Response",
-    description:
-      "Worked on Climate Response at Olivine. High-energy users needed to see their emissions in real time, so we pulled data from industrial sensors and utility feeds and turned it into something actionable. The hard part was making it useful without slowing anyone down.",
-    image: climateResponsePreview,
-    tags: [
-      "ReactJS",
-      "React Native",
-      "ExpressJS",
-      "TypeScript",
-      "Styled Components",
-      "Postgres",
-    ],
-    demoUrl: "https://www.climateresponse.com/",
-    category: "SaaS",
-  },
-  {
-    title: "Faunagram",
-    description:
-      "I built this because I kept noticing animals in the city and wanted to see if other people did too. It's an app where people share photos and locations of wildlife sightings. Turns out a lot of people pay attention to what's around them—more than I expected.",
-    image: faunagramPreview,
-    tags: ["React/Tanstack", "ExpressJS", "Tailwind", "Supabase"],
-    githubUrl: "https://github.com/dsound-zz/faunagram-app-v2",
-    demoUrl: "https://faunagram-app-v2.vercel.app/home",
-    category: "Social",
-  },
+  // {
+  //   title: "Faunagram",
+  //   description:
+  //     "I built this because I kept noticing animals in the city and wanted to see if other people did too. It's an app where people share photos and locations of wildlife sightings. Turns out a lot of people pay attention to what's around them—more than I expected.",
+  //   image: faunagramPreview,
+  //   tags: ["React/Tanstack", "ExpressJS", "Tailwind", "Supabase"],
+  //   githubUrl: "https://github.com/dsound-zz/faunagram-app-v2",
+  //   demoUrl: "https://faunagram-app-v2.vercel.app/home",
+  //   category: "Social",
+  // },
 ];
 
 export function Projects() {

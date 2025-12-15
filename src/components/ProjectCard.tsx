@@ -64,12 +64,11 @@ export function ProjectCard({
   }, [hoverTimeout]);
 
   return (
-    <Card className="group overflow-hidden transition-all duration-300 border border-warm-beige bg-warm-cream shadow-warm-card hover:border-warm-beige">
+    <Card className="group h-full overflow-hidden transition-all duration-300 border border-warm-beige bg-warm-cream shadow-warm-card hover:border-warm-beige">
       {/* Image Section - Clickable */}
       <div
-        className={`relative h-64 overflow-hidden bg-warm-cream ${
-          demoUrl ? "cursor-pointer" : ""
-        }`}
+        className={`relative h-64 overflow-hidden bg-warm-cream ${demoUrl ? "cursor-pointer" : ""
+          }`}
         onClick={handleImageClick}
       >
         <ImageWithFallback
@@ -116,9 +115,9 @@ export function ProjectCard({
         </div>
       </CardHeader>
 
-      <CardContent>
+      <CardContent className="flex flex-1 flex-col">
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2">
           {tags.map((tag) => (
             <Badge
               key={tag}
@@ -131,7 +130,7 @@ export function ProjectCard({
         </div>
 
         {/* Links */}
-        <div className="flex gap-4 flex-wrap">
+        <div className="mt-auto pt-4 flex gap-4 flex-wrap">
           {githubUrl && (
             <a
               href={githubUrl}
