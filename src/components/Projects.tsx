@@ -20,6 +20,7 @@ import musicPortfolioPreview from "../assets/projects/music-portfolio-preview.jp
 import climateResponsePreview from "../assets/projects/climate-response-preview.jpg";
 import moodBlocksPreview from "../assets/projects/mood-blocks.jpg";
 import linrPreview from "../assets/projects/linr-preview.jpg";
+import resonancePreview from "../assets/projects/resonance-preview.png"
 
 const projects: ProjectCardProps[] = [
   {
@@ -94,6 +95,16 @@ const projects: ProjectCardProps[] = [
     githubUrl: "https://github.com/dsound-zz/music-portfolio",
     demoUrl: "https://demian-sims-music.vercel.app",
     category: "Portfolio",
+  },
+  {
+    title: "Resonance",
+    description:
+      "This app is a hands-on physics sandbox designed to make abstract physical phenomena felt rather than explained. Instead of equations first, users interact directly with vibrating strings, resonant plates, coupled oscillators, and chaotic systems, discovering patterns through motion, sound, and visual feedback.",
+    image: resonancePreview,
+    tags: ["ReactJS", "Canvas", "Custom CSS"],
+    githubUrl: "https://github.com/dsound-zz/resonance",
+    demoUrl: "https://resonance-mu-seven.vercel.app/",
+    category: "Web App",
   },
   // {
   //   title: "Faunagram",
