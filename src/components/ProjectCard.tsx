@@ -33,7 +33,7 @@ export function ProjectCard({
   category,
 }: ProjectCardProps) {
   const [showTooltip, setShowTooltip] = useState(false);
-  const [hoverTimeout, setHoverTimeout] = useState<NodeJS.Timeout | null>(null);
+  const [hoverTimeout, setHoverTimeout] = useState<ReturnType<typeof setTimeout> | null>(null);
 
   const handleImageClick = () => {
     if (demoUrl) {
@@ -103,7 +103,7 @@ export function ProjectCard({
           onMouseLeave={handleMouseLeave}
           className="relative"
         >
-          <CardDescription className="text-2xl line-clamp-2 cursor-help text-warm-taupe font-body font-normal leading-relaxed hover:text-warm-brown transition-colors">
+          <CardDescription className="text-2xl line-clamp-3 cursor-help text-warm-taupe font-body font-normal leading-relaxed hover:text-warm-brown transition-colors">
             {description}
           </CardDescription>
           {showTooltip && (

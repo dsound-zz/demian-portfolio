@@ -10,9 +10,9 @@ export function Hero() {
     <section className="min-h-screen flex items-center justify-center bg-hero-gradient">
       <div className="container mx-auto px-4 pt-24 md:pt-32 pb-20">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8 inline-block">
+          <div className="mb-8 inline-block animate-pulse">
             <span
-              className="px-4 py-2 rounded-full bg-warm-cream text-warm-brown border border-warm-beige font-body text-lg leading-relaxed"
+              className="px-4 py-2 rounded-full bg-warm-cream text-warm-brown border-2 border-warm-terra font-body text-lg leading-relaxed font-medium shadow-sm"
               style={{ fontSize: "clamp(0.984rem, 1.5vw, 1.422rem)" }}
             >
               Available for interesting work

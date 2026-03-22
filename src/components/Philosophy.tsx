@@ -46,7 +46,7 @@ export function Philosophy() {
             className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-normal leading-relaxed"
             style={{ fontSize: "17.5px" }}
           >
-            A few things that matter to me when building software.
+            What I value when building software.
           </p>
         </div>
 

@@ -18,7 +18,7 @@ export function Footer() {
               className="text-3xl text-warm-taupe mb-8 font-body font-normal leading-relaxed"
               style={{ fontSize: "17.5px" }}
             >
-              If you're working on something interesting or mission-driven, I'm always open to chatting.
+              If you're building something meaningful, I'd love to hear about it.
             </p>
 
             <a
@@ -60,8 +60,8 @@ export function Footer() {
 
           <div className="text-center text-warm-taupe pt-8 border-t border-warm-beige">
             <p className="text-2xl font-body font-normal leading-relaxed">
-              © {currentYear} Demian Sims. Built with React & Tailwind CSS.
-              Deployed on Vercel.
+              © {currentYear} Demian Sims. Handcrafted with React.
+              Hosted on Vercel. Fueled by good coffee.
             </p>
           </div>
         </div>
