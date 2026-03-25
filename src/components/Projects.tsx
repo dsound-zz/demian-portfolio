@@ -45,6 +45,26 @@ const projects: ProjectCardProps[] = [
     category: "Platform",
   },
   {
+    title: "Trace",
+    description:
+      "TRACE is a neuroscience-informed journaling platform that uses Ecological Momentary Assessment (EMA) and Pennebaker’s expressive writing research to map a user's inner landscape through Moments, Reflections, and Traces. Rather than offering prescriptive advice or AI-driven diagnoses, the app utilizes Large Language Models to identify recurring patterns and invisible lines across fragmented emotional data. The system features a custom Archival Design System and a mycelial network visualization, transforming raw personal entries into a poetic, observational map of a user's lived experience.",
+    image: tracePreview,
+    tags: ["NextJS", "TypeScript", "LLM", "Tailwind", "Supabase"],
+    githubUrl: "https://github.com/dsound-zz/trace",
+    demoUrl: "https://trace-sage.vercel.app/",
+    category: "Neural",
+  },
+  {
+    title: "NowHere",
+    description:
+      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
+    image: nowHerePreview,
+    tags: ["NextJS", "LLM", "Neon", "Tailwinds", "Mapbox"],
+    githubUrl: "https://github.com/dsound-zz/nowhere-app",
+    demoUrl: "https://nowhere-app-one.vercel.app/",
+    category: "Neural",
+  },
+  {
     title: "Vigil",
     description:
       "I built this because I wanted people to be able to share safety alerts without worrying about their identity. It's a PWA where alerts get confirmed by multiple people before going live. The confirmation system was the tricky part—making sure fake alerts don't slip through.",
@@ -62,7 +82,7 @@ const projects: ProjectCardProps[] = [
     tags: ["NextJS", "TypeScript", "OpenAI", "Musicbrainz API", "Tailwind", "Wikimedia API"],
     githubUrl: "https://github.com/dsound-zz/linr",
     demoUrl: "https://linr-six.vercel.app/",
-    category: "Web App",
+    category: "Neural",
   },
   {
     title: "Resonance",
@@ -72,26 +92,6 @@ const projects: ProjectCardProps[] = [
     tags: ["ReactJS", "Canvas", "Custom CSS"],
     githubUrl: "https://github.com/dsound-zz/resonance",
     demoUrl: "https://resonance-mu-seven.vercel.app/",
-    category: "Web App",
-  },
-  {
-    title: "Trace",
-    description:
-      "TRACE is a neuroscience-informed journaling platform that uses Ecological Momentary Assessment (EMA) and Pennebaker’s expressive writing research to map a user's inner landscape through Moments, Reflections, and Traces. Rather than offering prescriptive advice or AI-driven diagnoses, the app utilizes Large Language Models to identify recurring patterns and invisible lines across fragmented emotional data. The system features a custom Archival Design System and a mycelial network visualization, transforming raw personal entries into a poetic, observational map of a user's lived experience.",
-    image: tracePreview,
-    tags: ["NextJS", "TypeScript", "LLM", "Tailwind", "Supabase"],
-    githubUrl: "https://github.com/dsound-zz/trace",
-    demoUrl: "https://trace-sage.vercel.app/",
-    category: "Web App",
-  },
-  {
-    title: "NowHere",
-    description:
-      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
-    image: nowHerePreview,
-    tags: ["NextJS", "LLM", "Neon", "Tailwinds", "Mapbox"],
-    githubUrl: "https://github.com/dsound-zz/nowhere-app",
-    demoUrl: "https://nowhere-app-one.vercel.app/",
     category: "Web App",
   },
   {
@@ -118,7 +118,7 @@ const projects: ProjectCardProps[] = [
     tags: ["NextJS", "TypeScript", "SSR", "LLM", "ExpressJS"],
     githubUrl: "https://github.com/dsound-zz/mood-blocks",
     demoUrl: "https://mood-blocks.vercel.app",
-    category: "Web App",
+    category: "Neural",
   },
   {
     title: "Music Portfolio",
@@ -145,13 +145,8 @@ const projects: ProjectCardProps[] = [
 
 export function Projects() {
   const allProjects = projects;
-  const webApps = projects.filter(
-    (p) =>
-      p.category === "Web App" ||
-      p.category === "SaaS" ||
-      p.category === "Platform"
-  );
-  const portfolios = projects.filter(
+  const neural = projects.filter((p) => p.category === "Neural");
+  const other = projects.filter(
     (p) => p.category === "Portfolio" || p.category === "Social"
   );
 
@@ -177,7 +172,7 @@ export function Projects() {
         <Tabs defaultValue="all" className="max-w-7xl mx-auto">
           <TabsList className="flex w-full max-w-full flex-wrap justify-center mx-auto mb-12 gap-2 sm:gap-1">
             <TabsTrigger value="all">All</TabsTrigger>
-            <TabsTrigger value="web">Web Apps</TabsTrigger>
+            <TabsTrigger value="neural">Neural</TabsTrigger>
             <TabsTrigger value="other">Other</TabsTrigger>
           </TabsList>
 
@@ -191,10 +186,10 @@ export function Projects() {
           </TabsContent>
 
           <TabsContent
-            value="web"
+            value="neural"
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {webApps.map((project, index) => (
+            {neural.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </TabsContent>
@@ -203,7 +198,7 @@ export function Projects() {
             value="other"
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            {portfolios.map((project, index) => (
+            {other.map((project, index) => (
               <ProjectCard key={index} {...project} />
             ))}
           </TabsContent>

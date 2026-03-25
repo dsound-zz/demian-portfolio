@@ -63,7 +63,7 @@ const techCategories = [
     id: 8,
     title: "Tools",
     icon: Code2,
-    technologies: ["Git", "VS Code", "Postman", "Jest", "Testing Library"],
+    technologies: ["Claude Code", "Roo Code", "Postman", "Cursor"],
   },
 ];
 
