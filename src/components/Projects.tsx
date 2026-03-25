@@ -59,7 +59,7 @@ const projects: ProjectCardProps[] = [
     description:
       "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
     image: nowHerePreview,
-    tags: ["NextJS", "LLM", "Neon", "Tailwinds", "Mapbox"],
+    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
     githubUrl: "https://github.com/dsound-zz/nowhere-app",
     demoUrl: "https://nowhere-app-one.vercel.app/",
     category: "Neural",
@@ -69,7 +69,7 @@ const projects: ProjectCardProps[] = [
     description:
       "I built this because I wanted people to be able to share safety alerts without worrying about their identity. It's a PWA where alerts get confirmed by multiple people before going live. The confirmation system was the tricky part—making sure fake alerts don't slip through.",
     image: vigilPreview,
-    tags: ["React/Tanstack", "TypeScript", "Tailwind", "Supabase"],
+    tags: ["React/Tanstack", "TypeScript", "Tailwind", "Neon"],
     githubUrl: "https://github.com/dsound-zz/vigil",
     demoUrl: "https://vigil-pi.vercel.app/",
     category: "Web App",
