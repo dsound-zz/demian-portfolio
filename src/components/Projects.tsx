@@ -20,7 +20,11 @@ import musicPortfolioPreview from "../assets/projects/music-portfolio-preview.jp
 import climateResponsePreview from "../assets/projects/climate-response-preview.jpg";
 import moodBlocksPreview from "../assets/projects/mood-blocks.jpg";
 import linrPreview from "../assets/projects/linr-preview.jpg";
-import resonancePreview from "../assets/projects/resonance-preview.png"
+import resonancePreview from "../assets/projects/resonance-preview.png";
+import tracePreview from "../assets/projects/trace-preview.png";
+import nowHerePreview from "../assets/projects/nowhere-preview.png";
+
+
 
 const projects: ProjectCardProps[] = [
   {
@@ -61,6 +65,36 @@ const projects: ProjectCardProps[] = [
     category: "Web App",
   },
   {
+    title: "Resonance",
+    description:
+      "This app is a hands-on physics sandbox designed to make abstract physical phenomena felt rather than explained. Instead of equations first, users interact directly with vibrating strings, resonant plates, coupled oscillators, and chaotic systems, discovering patterns through motion, sound, and visual feedback.",
+    image: resonancePreview,
+    tags: ["ReactJS", "Canvas", "Custom CSS"],
+    githubUrl: "https://github.com/dsound-zz/resonance",
+    demoUrl: "https://resonance-mu-seven.vercel.app/",
+    category: "Web App",
+  },
+  {
+    title: "Trace",
+    description:
+      "TRACE is a neuroscience-informed journaling platform that uses Ecological Momentary Assessment (EMA) and Pennebaker’s expressive writing research to map a user's inner landscape through Moments, Reflections, and Traces. Rather than offering prescriptive advice or AI-driven diagnoses, the app utilizes Large Language Models to identify recurring patterns and invisible lines across fragmented emotional data. The system features a custom Archival Design System and a mycelial network visualization, transforming raw personal entries into a poetic, observational map of a user's lived experience.",
+    image: tracePreview,
+    tags: ["NextJS", "TypeScript", "LLM", "Tailwind", "Supabase"],
+    githubUrl: "https://github.com/dsound-zz/trace",
+    demoUrl: "https://trace-sage.vercel.app/",
+    category: "Web App",
+  },
+  {
+    title: "NowHere",
+    description:
+      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
+    image: nowHerePreview,
+    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
+    githubUrl: "https://github.com/dsound-zz/nowhere-app",
+    demoUrl: "https://nowhere-app-one.vercel.app/",
+    category: "Web App",
+  },
+  {
     title: "Climate Response",
     description:
       "Worked on Climate Response at Olivine. High-energy users needed to see their emissions in real time, so we pulled data from industrial sensors and utility feeds and turned it into something actionable. The hard part was making it useful without slowing anyone down.",
@@ -96,16 +130,7 @@ const projects: ProjectCardProps[] = [
     demoUrl: "https://demian-sims-music.vercel.app",
     category: "Portfolio",
   },
-  {
-    title: "Resonance",
-    description:
-      "This app is a hands-on physics sandbox designed to make abstract physical phenomena felt rather than explained. Instead of equations first, users interact directly with vibrating strings, resonant plates, coupled oscillators, and chaotic systems, discovering patterns through motion, sound, and visual feedback.",
-    image: resonancePreview,
-    tags: ["ReactJS", "Canvas", "Custom CSS"],
-    githubUrl: "https://github.com/dsound-zz/resonance",
-    demoUrl: "https://resonance-mu-seven.vercel.app/",
-    category: "Web App",
-  },
+
   // {
   //   title: "Faunagram",
   //   description:
