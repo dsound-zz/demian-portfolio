@@ -89,7 +89,7 @@ const projects: ProjectCardProps[] = [
     description:
       "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
     image: nowHerePreview,
-    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
+    tags: ["NextJS", "LLM", "Neon", "Tailwinds", "Mapbox"],
     githubUrl: "https://github.com/dsound-zz/nowhere-app",
     demoUrl: "https://nowhere-app-one.vercel.app/",
     category: "Web App",
@@ -115,7 +115,7 @@ const projects: ProjectCardProps[] = [
     description:
       "This one was a fun experiment. Type 'How are you?' and get back color, animation, and binaural beats. Uses an LLM to parse mood, then Web Audio API to generate visuals and sound. Built it to see if I could make emotions tangible—turned out pretty interesting.",
     image: moodBlocksPreview,
-    tags: ["NextJS", "TypeScript", "OpenAI", "SSR", "LLM", "ExpressJS"],
+    tags: ["NextJS", "TypeScript", "SSR", "LLM", "ExpressJS"],
     githubUrl: "https://github.com/dsound-zz/mood-blocks",
     demoUrl: "https://mood-blocks.vercel.app",
     category: "Web App",

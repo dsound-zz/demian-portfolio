@@ -26,7 +26,7 @@ const techCategories = [
     id: 3,
     title: "Database",
     icon: Database,
-    technologies: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Supabase"],
+    technologies: ["PostgreSQL", "MongoDB", "Redis", "Prisma", "Supabase", "Neon"],
   },
   {
     id: 4,
@@ -81,7 +81,7 @@ export function TechStack() {
           >
             What I Use
           </h2>
-          <p 
+          <p
             className="text-3xl text-warm-taupe max-w-2xl mx-auto font-body font-normal leading-relaxed"
             style={{ fontSize: "17.5px" }}
           >
