@@ -23,6 +23,8 @@ import linrPreview from "../assets/projects/linr-preview.jpg";
 import resonancePreview from "../assets/projects/resonance-preview.png";
 import tracePreview from "../assets/projects/trace-preview.png";
 import nowHerePreview from "../assets/projects/nowhere-preview.png";
+import signalPreview from "../assets/projects/signal-preview.png";
+
 
 
 
@@ -43,6 +45,16 @@ const projects: ProjectCardProps[] = [
     demoUrl: "https://www.avandarlabs.com/",
     blogUrl: "https://www.avandarlabs.com/blog/avandar-v0-1",
     category: "Platform",
+  },
+  {
+    title: "Signal",
+    description: "SIGNAL is a specialized Retrieval-Augmented Generation (RAG) application developed to combat misinformation and LLM hallucinations within the complex domain of UAP (UFO) phenomena. I engineered a solution that strictly limits model generation to ingested, verified primary sources, including declassified government reports, congressional testimony, and scientific analyses. The application implements a unique schema-level credibility tier system (Government, Scientific, and Secondary) to weight retrieved context based on source reliability. Built with Next.js 14, Neon pgvector, Drizzle ORM, and Anthropic Claude Sonnet via the Vercel AI SDK, SIGNAL delivers responses with forced citations, page numbers, and dynamic source linking.",
+    image: signalPreview,
+    imageClassName: "object-contain object-center p-2",
+    tags: ["Next.js", "RAG", "Vector Search", "LLM", "Neon", "Drizzle ORM", "Vercel AI SDK"],
+    githubUrl: "https://github.com/dsound-zz/signal",
+    demoUrl: "https://signal-drab-gamma.vercel.app/",
+    category: "Neural",
   },
   {
     title: "Trace",
