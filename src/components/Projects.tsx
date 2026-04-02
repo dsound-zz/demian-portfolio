@@ -24,6 +24,7 @@ import resonancePreview from "../assets/projects/resonance-preview.png";
 import tracePreview from "../assets/projects/trace-preview.png";
 import nowHerePreview from "../assets/projects/nowhere-preview.png";
 import signalPreview from "../assets/projects/signal-preview.png";
+import legoministPreview from "../assets/projects/legominist-preview.png";
 
 
 
@@ -74,6 +75,17 @@ const projects: ProjectCardProps[] = [
     tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
     githubUrl: "https://github.com/dsound-zz/nowhere-app",
     demoUrl: "https://nowhere-app-one.vercel.app/",
+    category: "Neural",
+  },
+  {
+    title: "The Legominist",
+    description:
+      "A RAG pipeline and research tool for G.I. Gurdjieff's 'Beelzebub's Tales to His Grandson'. It features a high-performance semantic search engine, a specialized lexicon analysis engine for esoteric neologisms, and a scholar-inspired dashboard. Built with Next.js, FastAPI, and the Gemini API to parse and navigate one of the 20th century's most complex esoteric texts.",
+    image: legoministPreview,
+    imageClassName: "object-contain object-center p-4",
+    tags: ["Next.js", "FastAPI", "Gemini API", "RAG", "ChromaDB", "Vector Search"],
+    githubUrl: "https://github.com/dsound-zz/the-legominists",
+    demoUrl: "https://the-legominist.vercel.app/",
     category: "Neural",
   },
   {

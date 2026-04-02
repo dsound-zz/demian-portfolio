@@ -20,6 +20,7 @@ export interface ProjectCardProps {
   demoUrl?: string;
   blogUrl?: string;
   category?: string;
+  imageClassName?: string;
 }
 
 export function ProjectCard({
@@ -31,6 +32,7 @@ export function ProjectCard({
   demoUrl,
   blogUrl,
   category,
+  imageClassName,
 }: ProjectCardProps) {
   const [showTooltip, setShowTooltip] = useState(false);
   const [hoverTimeout, setHoverTimeout] = useState<ReturnType<typeof setTimeout> | null>(null);
@@ -75,7 +77,9 @@ export function ProjectCard({
         <ImageWithFallback
           src={image}
           alt={title}
-          className="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
+          className={`w-full h-full transition-transform duration-500 group-hover:scale-110 ${
+            imageClassName || "object-cover object-top"
+          }`}
         />
         {category && (
           <div className="absolute top-4 right-4">
