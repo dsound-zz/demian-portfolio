@@ -60,14 +60,25 @@ const projects: ProjectCardProps[] = [
     blogUrl: "https://www.avandarlabs.com/blog/avandar-v0-1",
     category: "Platform",
   },
-  {
-    title: "Signal",
-    description: "SIGNAL is a specialized Retrieval-Augmented Generation (RAG) application developed to combat misinformation and LLM hallucinations within the complex domain of UAP (UFO) phenomena. I engineered a solution that strictly limits model generation to ingested, verified primary sources, including declassified government reports, congressional testimony, and scientific analyses. The application implements a unique schema-level credibility tier system (Government, Scientific, and Secondary) to weight retrieved context based on source reliability. Built with Next.js 14, Neon pgvector, Drizzle ORM, and Anthropic Claude Sonnet via the Vercel AI SDK, SIGNAL delivers responses with forced citations, page numbers, and dynamic source linking.",
-    image: signalPreview,
-    imageClassName: "object-contain object-center p-2",
-    tags: ["Next.js", "RAG", "Vector Search", "LLM", "Neon", "Drizzle ORM", "Vercel AI SDK"],
-    githubUrl: "https://github.com/dsound-zz/signal",
-    demoUrl: "https://signal-drab-gamma.vercel.app/",
+    {
+    title: "NowHere",
+    description:
+      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
+    image: nowHerePreview,
+    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
+    githubUrl: "https://github.com/dsound-zz/nowhere-app",
+    demoUrl: "https://nowhere-app-one.vercel.app/",
+    category: "Neural",
+  },
+    {
+    title: "The Legominist",
+    description:
+      "A RAG pipeline and research tool for G.I. Gurdjieff's 'Beelzebub's Tales to His Grandson'. It features a high-performance semantic search engine, a specialized lexicon analysis engine for esoteric neologisms, and a scholar-inspired dashboard. Built with Next.js, FastAPI, and the Gemini API to parse and navigate one of the 20th century's most complex esoteric texts.",
+    image: legoministPreview,
+    imageClassName: "object-contain object-center p-4",
+    tags: ["Next.js", "FastAPI", "Gemini API", "RAG", "ChromaDB", "Vector Search"],
+    githubUrl: "https://github.com/dsound-zz/the-legominists",
+    demoUrl: "https://the-legominist.vercel.app/",
     category: "Neural",
   },
   {
@@ -80,25 +91,14 @@ const projects: ProjectCardProps[] = [
     demoUrl: "https://trace-sage.vercel.app/",
     category: "Neural",
   },
-  {
-    title: "NowHere",
-    description:
-      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
-    image: nowHerePreview,
-    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
-    githubUrl: "https://github.com/dsound-zz/nowhere-app",
-    demoUrl: "https://nowhere-app-one.vercel.app/",
-    category: "Neural",
-  },
-  {
-    title: "The Legominist",
-    description:
-      "A RAG pipeline and research tool for G.I. Gurdjieff's 'Beelzebub's Tales to His Grandson'. It features a high-performance semantic search engine, a specialized lexicon analysis engine for esoteric neologisms, and a scholar-inspired dashboard. Built with Next.js, FastAPI, and the Gemini API to parse and navigate one of the 20th century's most complex esoteric texts.",
-    image: legoministPreview,
-    imageClassName: "object-contain object-center p-4",
-    tags: ["Next.js", "FastAPI", "Gemini API", "RAG", "ChromaDB", "Vector Search"],
-    githubUrl: "https://github.com/dsound-zz/the-legominists",
-    demoUrl: "https://the-legominist.vercel.app/",
+   {
+    title: "Signal",
+    description: "SIGNAL is a specialized Retrieval-Augmented Generation (RAG) application developed to combat misinformation and LLM hallucinations within the complex domain of UAP (UFO) phenomena. I engineered a solution that strictly limits model generation to ingested, verified primary sources, including declassified government reports, congressional testimony, and scientific analyses. The application implements a unique schema-level credibility tier system (Government, Scientific, and Secondary) to weight retrieved context based on source reliability. Built with Next.js 14, Neon pgvector, Drizzle ORM, and Anthropic Claude Sonnet via the Vercel AI SDK, SIGNAL delivers responses with forced citations, page numbers, and dynamic source linking.",
+    image: signalPreview,
+    imageClassName: "object-contain object-center p-2",
+    tags: ["Next.js", "RAG", "Vector Search", "LLM", "Neon", "Drizzle ORM", "Vercel AI SDK"],
+    githubUrl: "https://github.com/dsound-zz/signal",
+    demoUrl: "https://signal-drab-gamma.vercel.app/",
     category: "Neural",
   },
   {
