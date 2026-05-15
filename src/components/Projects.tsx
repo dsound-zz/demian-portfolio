@@ -25,11 +25,24 @@ import tracePreview from "../assets/projects/trace-preview.png";
 import nowHerePreview from "../assets/projects/nowhere-preview.png";
 import signalPreview from "../assets/projects/signal-preview.png";
 import legoministPreview from "../assets/projects/legominist-preview.png";
+import sprigPreview from "../assets/projects/sprig-preview.png"; 
+
 
 
 
 
 const projects: ProjectCardProps[] = [
+  {
+    title: "Sprig",
+    description:
+      "Sprig is a minimal, keyboard-driven mind mapping tool with three LLM modes: manual node building, an AI copilot that suggests related concepts with keep-or-edit control, and an autopilot that expands a concept to a chosen depth automatically. Built with Next.js, Neon Postgres, React Flow, and Together AI.",
+    image: sprigPreview,
+    imageClassName: "object-contain object-center p-2",
+    tags: ["Next.js", "TypeScript", "React Flow", "LLM", "Canvas", "Dag"],
+    githubUrl: "https://github.com/dsound-zz/sprig",
+    demoUrl: "https://sprig.vercel.app/", // Update if different
+    category: "Neural",
+  },
   {
     title: "AvandarLabs",
     description:
