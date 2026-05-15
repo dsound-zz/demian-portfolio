@@ -32,6 +32,16 @@ import sprigPreview from "../assets/projects/sprig-preview.png";
 
 
 const projects: ProjectCardProps[] = [
+   {
+    title: "NowHere",
+    description:
+      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
+    image: nowHerePreview,
+    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
+    githubUrl: "https://github.com/dsound-zz/nowhere-app",
+    demoUrl: "https://nowhere-app-one.vercel.app/",
+    category: "Neural",
+  },
   {
     title: "Sprig",
     description:
@@ -59,16 +69,6 @@ const projects: ProjectCardProps[] = [
     demoUrl: "https://www.avandarlabs.com/",
     blogUrl: "https://www.avandarlabs.com/blog/avandar-v0-1",
     category: "Platform",
-  },
-    {
-    title: "NowHere",
-    description:
-      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
-    image: nowHerePreview,
-    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
-    githubUrl: "https://github.com/dsound-zz/nowhere-app",
-    demoUrl: "https://nowhere-app-one.vercel.app/",
-    category: "Neural",
   },
     {
     title: "The Legominist",
