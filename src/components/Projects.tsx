@@ -31,153 +31,93 @@ import sprigPreview from "../assets/projects/sprig-preview.png";
 
 
 
+
 const projects: ProjectCardProps[] = [
-   {
-    title: "NowHere",
-    description:
-      "NowHere is a location-based social discovery app that allows users to find and join local events within a one-mile radius with zero-friction anonymous browsing. It features AI-powered event parsing from venue emails and real-time chat, enabling instant social connection without the need for a traditional account.",
-    image: nowHerePreview,
-    tags: ["NextJS", "LLM", "Supabase", "Tailwinds", "Mapbox"],
-    githubUrl: "https://github.com/dsound-zz/nowhere-app",
-    demoUrl: "https://nowhere-app-one.vercel.app/",
-    category: "Neural",
-  },
   {
-    title: "Sprig",
+    title: "Avandar Labs",
     description:
-      "Sprig is a minimal, keyboard-driven mind mapping tool with three LLM modes: manual node building, an AI copilot that suggests related concepts with keep-or-edit control, and an autopilot that expands a concept to a chosen depth automatically. Built with Next.js, Neon Postgres, React Flow, and Together AI.",
-    image: sprigPreview,
-    imageClassName: "object-contain object-center p-2",
-    tags: ["Next.js", "TypeScript", "React Flow", "LLM", "Canvas", "Dag"],
-    githubUrl: "https://github.com/dsound-zz/sprig",
-    demoUrl: "https://sprig.vercel.app/", // Update if different
-    category: "Neural",
-  },
-  {
-    title: "AvandarLabs",
-    description:
-      "At Avandar Labs I spent a lot of time wrestling with CSV files that were too big to upload. Built client-side data tooling with DuckDB-WASM so organizations could analyze their data without shipping everything to a server. Learned a lot about geospatial work along the way.",
+      "At Avandar Labs, organizations needed to analyze datasets with " +
+      "millions of rows, but server-side retrieval was too slow to be " +
+      "usable. I moved the analytics layer into the browser with " +
+      "DuckDB-WASM, so data could be queried locally without shipping " +
+      "everything to a server, and paired it with an LLM-driven " +
+      "plain-language query layer that let non-technical users filter " +
+      "data without writing SQL. Built with React/TanStack, DexieDB for " +
+      "local persistence, and Supabase.",
     image: avandarPreview,
-    tags: [
-      "React/Tanstack",
-      "TypeScript",
-      "DuckDB WASM",
-      "DexieDB",
-      "Supabase",
-    ],
+    tags: ["React/TanStack", "TypeScript", "DuckDB-WASM", "DexieDB", "Supabase"],
     githubUrl: "https://github.com/AvandarLabs/avandar/releases/tag/v0.1.0",
     demoUrl: "https://www.avandarlabs.com/",
     blogUrl: "https://www.avandarlabs.com/blog/avandar-v0-1",
-    category: "Platform",
-  },
-    {
-    title: "The Legominist",
-    description:
-      "A RAG pipeline and research tool for G.I. Gurdjieff's 'Beelzebub's Tales to His Grandson'. It features a high-performance semantic search engine, a specialized lexicon analysis engine for esoteric neologisms, and a scholar-inspired dashboard. Built with Next.js, FastAPI, and the Gemini API to parse and navigate one of the 20th century's most complex esoteric texts.",
-    image: legoministPreview,
-    imageClassName: "object-contain object-center p-4",
-    tags: ["Next.js", "FastAPI", "Gemini API", "RAG", "ChromaDB", "Vector Search"],
-    githubUrl: "https://github.com/dsound-zz/the-legominists",
-    demoUrl: "https://the-legominist.vercel.app/",
-    category: "Neural",
-  },
-  {
-    title: "Trace",
-    description:
-      "TRACE is a neuroscience-informed journaling platform that uses Ecological Momentary Assessment (EMA) and Pennebaker’s expressive writing research to map a user's inner landscape through Moments, Reflections, and Traces. Rather than offering prescriptive advice or AI-driven diagnoses, the app utilizes Large Language Models to identify recurring patterns and invisible lines across fragmented emotional data. The system features a custom Archival Design System and a mycelial network visualization, transforming raw personal entries into a poetic, observational map of a user's lived experience.",
-    image: tracePreview,
-    tags: ["NextJS", "TypeScript", "LLM", "Tailwind", "Supabase"],
-    githubUrl: "https://github.com/dsound-zz/trace",
-    demoUrl: "https://trace-sage.vercel.app/",
-    category: "Neural",
-  },
-   {
-    title: "Signal",
-    description: "SIGNAL is a specialized Retrieval-Augmented Generation (RAG) application developed to combat misinformation and LLM hallucinations within the complex domain of UAP (UFO) phenomena. I engineered a solution that strictly limits model generation to ingested, verified primary sources, including declassified government reports, congressional testimony, and scientific analyses. The application implements a unique schema-level credibility tier system (Government, Scientific, and Secondary) to weight retrieved context based on source reliability. Built with Next.js 14, Neon pgvector, Drizzle ORM, and Anthropic Claude Sonnet via the Vercel AI SDK, SIGNAL delivers responses with forced citations, page numbers, and dynamic source linking.",
-    image: signalPreview,
-    imageClassName: "object-contain object-center p-2",
-    tags: ["Next.js", "RAG", "Vector Search", "LLM", "Neon", "Drizzle ORM", "Vercel AI SDK"],
-    githubUrl: "https://github.com/dsound-zz/signal",
-    demoUrl: "https://signal-drab-gamma.vercel.app/",
-    category: "Neural",
-  },
-  {
-    title: "Vigil",
-    description:
-      "I built this because I wanted people to be able to share safety alerts without worrying about their identity. It's a PWA where alerts get confirmed by multiple people before going live. The confirmation system was the tricky part—making sure fake alerts don't slip through.",
-    image: vigilPreview,
-    tags: ["React/Tanstack", "TypeScript", "Tailwind", "Neon"],
-    githubUrl: "https://github.com/dsound-zz/vigil",
-    demoUrl: "https://vigil-pi.vercel.app/",
-    category: "Web App",
-  },
-  {
-    title: "Linr",
-    description:
-      "Linr brings liner-note thinking to modern music search. It blends MusicBrainz, Wikipedia, and OpenAI to resolve ambiguous song queries and return properly attributed credits — treating music as cultural work, not just metadata.",
-    image: linrPreview,
-    tags: ["NextJS", "TypeScript", "OpenAI", "Musicbrainz API", "Tailwind", "Wikimedia API"],
-    githubUrl: "https://github.com/dsound-zz/linr",
-    demoUrl: "https://linr-six.vercel.app/",
-    category: "Neural",
-  },
-  {
-    title: "Resonance",
-    description:
-      "This app is a hands-on physics sandbox designed to make abstract physical phenomena felt rather than explained. Instead of equations first, users interact directly with vibrating strings, resonant plates, coupled oscillators, and chaotic systems, discovering patterns through motion, sound, and visual feedback.",
-    image: resonancePreview,
-    tags: ["ReactJS", "Canvas", "Custom CSS"],
-    githubUrl: "https://github.com/dsound-zz/resonance",
-    demoUrl: "https://resonance-mu-seven.vercel.app/",
-    category: "Web App",
+    category: "Production",
   },
   {
     title: "Climate Response",
     description:
-      "Worked on Climate Response at Olivine. High-energy users needed to see their emissions in real time, so we pulled data from industrial sensors and utility feeds and turned it into something actionable. The hard part was making it useful without slowing anyone down.",
+      "High-energy industrial users at Olivine needed to see their " +
+      "emissions in real time. I helped build the pipeline that pulled " +
+      "data from industrial sensors and utility feeds and turned it into " +
+      "an actionable dashboard across web and React Native. The core " +
+      "constraint was surfacing live data fast enough to be useful " +
+      "without slowing the interface down.",
     image: climateResponsePreview,
-    tags: [
-      "ReactJS",
-      "React Native",
-      "ExpressJS",
-      "TypeScript",
-      "Styled Components",
-      "Postgres",
-    ],
+    tags: ["React", "React Native", "Express", "TypeScript", "Styled Components", "Postgres"],
     demoUrl: "https://www.climateresponse.com/",
-    category: "SaaS",
+    category: "Production",
   },
   {
-    title: "Mood Blocks",
+    title: "Signal",
     description:
-      "This one was a fun experiment. Type 'How are you?' and get back color, animation, and binaural beats. Uses an LLM to parse mood, then Web Audio API to generate visuals and sound. Built it to see if I could make emotions tangible—turned out pretty interesting.",
-    image: moodBlocksPreview,
-    tags: ["NextJS", "TypeScript", "SSR", "LLM", "ExpressJS"],
-    githubUrl: "https://github.com/dsound-zz/mood-blocks",
-    demoUrl: "https://mood-blocks.vercel.app",
-    category: "Neural",
+      "A Retrieval-Augmented Generation app built around a hard problem: " +
+      "LLM hallucination in a contested, misinformation-heavy domain " +
+      "(UAP research). Generation is strictly constrained to ingested, " +
+      "verified primary sources, and a schema-level credibility-tier " +
+      "system (Government, Scientific, Secondary) weights retrieved " +
+      "context by source reliability. Every response carries forced " +
+      "citations with page numbers and source links. Built with " +
+      "Next.js 14, Neon pgvector, Drizzle ORM, and Claude via the " +
+      "Vercel AI SDK.",
+    image: signalPreview,
+    imageClassName: "object-contain object-center p-2",
+    tags: ["Next.js", "RAG", "Vector Search", "Neon", "Drizzle ORM", "Vercel AI SDK"],
+    githubUrl: "https://github.com/dsound-zz/signal",
+    demoUrl: "https://signal-drab-gamma.vercel.app/",
+    category: "Personal",
   },
   {
-    title: "Music Portfolio",
+    title: "Sprig",
     description:
-      "A portfolio site for my music and sound design work—thousands of tracks from original productions and band work. Built this to organize years of audio work from my previous career as a composer.",
-    image: musicPortfolioPreview,
-    tags: ["NextJS", "TypeScript", "Sanity CMS"],
-    githubUrl: "https://github.com/dsound-zz/music-portfolio",
-    demoUrl: "https://demian-sims-music.vercel.app",
-    category: "Portfolio",
+      "A keyboard-driven mind-mapping tool built around a specific " +
+      "design question: how do you let an LLM expand your thinking " +
+      "without taking the wheel? Three modes (manual building, an AI " +
+      "copilot that suggests related concepts with explicit " +
+      "keep-or-edit control, and an autopilot that expands a concept to " +
+      "a chosen depth) keep the user in charge of every AI " +
+      "contribution. Built with Next.js, React Flow, Neon Postgres, and " +
+      "Together AI.",
+    image: sprigPreview,
+    imageClassName: "object-contain object-center p-2",
+    tags: ["Next.js", "TypeScript", "React Flow", "LLM", "Canvas", "DAG"],
+    githubUrl: "https://github.com/dsound-zz/sprig",
+    demoUrl: "https://sprig.vercel.app/",
+    category: "Personal",
   },
-
-  // {
-  //   title: "Faunagram",
-  //   description:
-  //     "I built this because I kept noticing animals in the city and wanted to see if other people did too. It's an app where people share photos and locations of wildlife sightings. Turns out a lot of people pay attention to what's around them—more than I expected.",
-  //   image: faunagramPreview,
-  //   tags: ["React/Tanstack", "ExpressJS", "Tailwind", "Supabase"],
-  //   githubUrl: "https://github.com/dsound-zz/faunagram-app-v2",
-  //   demoUrl: "https://faunagram-app-v2.vercel.app/home",
-  //   category: "Social",
-  // },
+  {
+    title: "Linr",
+    description:
+      "Linr resolves ambiguous music queries into properly attributed " +
+      "song credits. The hard part is entity resolution: reconciling " +
+      "messy, inconsistent metadata across MusicBrainz and Wikipedia, " +
+      "with an LLM layer to disambiguate. It carries a point of view " +
+      "from my prior career as a composer, treating music as cultural " +
+      "work with authorship rather than just searchable metadata. Built " +
+      "with Next.js, TypeScript, and the MusicBrainz and Wikimedia APIs.",
+    image: linrPreview,
+    tags: ["Next.js", "TypeScript", "OpenAI", "MusicBrainz API", "Wikimedia API"],
+    githubUrl: "https://github.com/dsound-zz/linr",
+    demoUrl: "https://linr-six.vercel.app/",
+    category: "Personal",
+  },
 ];
 
 export function Projects() {
