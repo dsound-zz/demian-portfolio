@@ -21,6 +21,7 @@ import signalPreview from "../assets/projects/signal-preview.png";
 import legoministPreview from "../assets/projects/legominist-preview.png";
 import sprigPreview from "../assets/projects/sprig-preview.png";
 import tmlPreview from "../assets/projects/tml-status-dashboard-preview.png";
+import resonancePreview from "../assets/projects/resonance-preview.png";
 
 
 
@@ -142,6 +143,16 @@ const projects: ProjectCardProps[] = [
     githubUrl: "https://github.com/dsound-zz/linr",
     demoUrl: "https://linr-six.vercel.app/",
     category: "Personal",
+  },
+  {
+    title: "Resonance",
+    description:
+      "This app is a hands-on physics sandbox designed to make abstract physical phenomena felt rather than explained. Instead of equations first, users interact directly with vibrating strings, resonant plates, coupled oscillators, and chaotic systems, discovering patterns through motion, sound, and visual feedback.",
+    image: resonancePreview,
+    tags: ["ReactJS", "Canvas", "Custom CSS"],
+    githubUrl: "https://github.com/dsound-zz/resonance",
+    demoUrl: "https://resonance-mu-seven.vercel.app/",
+    category: "Web App",
   },
 ];
 
