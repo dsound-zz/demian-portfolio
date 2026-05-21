@@ -20,6 +20,7 @@ import linrPreview from "../assets/projects/linr-preview.jpg";
 import signalPreview from "../assets/projects/signal-preview.png";
 import legoministPreview from "../assets/projects/legominist-preview.png";
 import sprigPreview from "../assets/projects/sprig-preview.png";
+import tmlPreview from "../assets/projects/tml-status-dashboard-preview.png";
 
 
 
@@ -57,6 +58,25 @@ const projects: ProjectCardProps[] = [
     image: climateResponsePreview,
     tags: ["React", "React Native", "Express", "TypeScript", "Styled Components", "Postgres"],
     demoUrl: "https://www.climateresponse.com/",
+    category: "Production",
+  },
+  {
+    title: "TML Status Dashboard",
+    description:
+      "At TML Information Services, operations teams needed a live view " +
+      "of MVR data feed health across all 50 states — distinguishing " +
+      "planned outages with scheduled windows from unplanned ones that " +
+      "needed immediate contact. I rebuilt this production system as a " +
+      "portfolio piece, replacing the original Action Cable polling with " +
+      "TanStack Query's refetchInterval, which handles the same cadence " +
+      "without the Redis dependency. A background simulator flips state " +
+      "statuses on a real schedule so the dashboard behaves like the " +
+      "live system. Built with Rails 7, React 19, MUI v9, and TanStack " +
+      "Query, deployed to Railway.",
+    image: tmlPreview,
+    tags: ["Rails", "React", "TypeScript", "TanStack Query", "MUI", "PostgreSQL"],
+    githubUrl: "https://github.com/dsound-zz/tml-status-dashboard",
+    demoUrl: "",
     category: "Production",
   },
   {
