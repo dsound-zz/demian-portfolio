@@ -77,7 +77,7 @@ const projects: ProjectCardProps[] = [
     image: tmlPreview,
     tags: ["Rails", "React", "TypeScript", "TanStack Query", "MUI", "PostgreSQL"],
     githubUrl: "https://github.com/dsound-zz/tml-status-dashboard",
-    demoUrl: "",
+    demoUrl: "https://web-production-101c2.up.railway.app/",
     category: "Production",
   },
   {
