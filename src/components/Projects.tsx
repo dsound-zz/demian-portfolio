@@ -27,6 +27,7 @@ import whimPreview from "../assets/projects/whim-preview.png";
 
 
 
+
 const projects: ProjectCardProps[] = [
   {
     title: "Avandar Labs",
