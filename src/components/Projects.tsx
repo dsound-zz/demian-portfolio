@@ -22,8 +22,7 @@ import legoministPreview from "../assets/projects/legominist-preview.png";
 import sprigPreview from "../assets/projects/sprig-preview.png";
 import tmlPreview from "../assets/projects/tml-status-dashboard-preview.png";
 import resonancePreview from "../assets/projects/resonance-preview.png";
-
-
+import whimPreview from "../assets/projects/whim-preview.png";
 
 
 
@@ -154,6 +153,24 @@ const projects: ProjectCardProps[] = [
     demoUrl: "https://resonance-mu-seven.vercel.app/",
     category: "Web App",
   },
+  {
+    title: "Whim",
+    description:
+      "To solve the extreme fragmentation of city nightlife and community event discovery, " +
+      "I built Whim—a comprehensive B2B local events data platform and consumer aggregator. " +
+      "The architecture autonomously ingests disparate data streams from ticketing APIs, " +
+      "headless Playwright scrapers, iCal feeds, and direct venue submissions. " +
+      "The system normalizes, geocodes, and deduplicates these feeds into a unified, " +
+      "high-integrity REST API. For the end consumer, this proprietary data infrastructure " +
+      "powers a sleek, map-centric discovery UI that instantly answers the question, " +
+      "'what's happening near me tonight'.",
+    image: whimPreview,
+    tags: ["Next.js", "TypeScript", "Drizzle ORM", "Neon Postgres", "Mapbox", "Playwright"],
+    githubUrl: "https://github.com/dsound-zz/whim",
+    demoUrl: "https://whim-production-af50.up.railway.app",
+    blogUrl: "",
+    category: "Production",
+  }
 ];
 
 export function Projects() {
