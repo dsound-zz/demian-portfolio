@@ -23,6 +23,7 @@ import sprigPreview from "../assets/projects/sprig-preview.png";
 import tmlPreview from "../assets/projects/tml-status-dashboard-preview.png";
 import resonancePreview from "../assets/projects/resonance-preview.png";
 import whimPreview from "../assets/projects/whim-preview.png";
+import ddiaPreview from "../assets/projects/ddia-preview.png";
 
 
 
@@ -97,6 +98,25 @@ const projects: ProjectCardProps[] = [
     githubUrl: "https://github.com/dsound-zz/tml-status-dashboard",
     demoUrl: "https://wonderful-gentleness-production-5f5b.up.railway.app/",
     category: "Production",
+  },
+  {
+    title: "DDIA-RAG",
+    description:
+      "A hierarchical Retrieval-Augmented Generation application designed to " +
+      "act as an interactive mentor for Designing Data-Intensive Applications. " +
+      "Built with Next.js, LangGraph, and a Neon serverless Postgres database " +
+      "using Drizzle ORM, it maps the book's text chunks to their specific " +
+      "chapter and section metadata. Powered by Together AI's open-source " +
+      "models—Llama 3.1 8B for parsing, Nomic for vector embeddings, and " +
+      "Llama 3.1 70B for advanced reasoning—the system can execute broad " +
+      "semantic searches or route highly localized queries to the exact section " +
+      "you are reading, providing context-aware, step-by-step breakdowns of " +
+      "complex concepts.",
+    image: ddiaPreview,
+    tags: ["Next.js", "LangGraph", "Together AI", "Neon", "pgvector", "Drizzle ORM", "RAG"],
+    githubUrl: "https://github.com/dsound-zz/DDIA-RAG",
+    demoUrl: "https://ddia-rag-git-main-dsoundzzs-projects.vercel.app/",
+    category: "Neural",
   },
   {
     title: "The Legominist",
