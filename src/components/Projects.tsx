@@ -115,7 +115,7 @@ const projects: ProjectCardProps[] = [
     image: ddiaPreview,
     tags: ["Next.js", "LangGraph", "Together AI", "Neon", "pgvector", "Drizzle ORM", "RAG"],
     githubUrl: "https://github.com/dsound-zz/DDIA-RAG",
-    demoUrl: "https://ddia-rag-git-main-dsoundzzs-projects.vercel.app/",
+    demoUrl: "https://ddia-rag.vercel.app/",
     category: "Neural",
   },
   {
