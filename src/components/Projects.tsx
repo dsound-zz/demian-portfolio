@@ -163,7 +163,7 @@ const projects: ProjectCardProps[] = [
     imageClassName: "object-contain object-center p-2",
     tags: ["Next.js", "TypeScript", "React Flow", "LLM", "Canvas", "DAG"],
     githubUrl: "https://github.com/dsound-zz/sprig",
-    demoUrl: "https://sprig.vercel.app/",
+    demoUrl: "https://sprig-lac.vercel.app/canvas",
     category: "Personal",
   },
   {
